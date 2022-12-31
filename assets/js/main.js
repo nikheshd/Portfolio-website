@@ -54,3 +54,34 @@ sr.reveal('.home__data, .about__img, .skills__subtitle, .skills__text, .educatio
 sr.reveal('.home__img, .about__subtitle, .about__text, .skills__img',{delay: 100}); 
 sr.reveal('.home__social-icon',{ interval: 100}); 
 sr.reveal('.skills__data, .work__img, .contact__input',{interval: 100}); 
+
+
+
+
+
+//modal
+// Get the modal
+var modal1 = document.getElementById("myModal1");
+
+// Get the button that opens the modal
+var btn1 = document.getElementById("myBtn1");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal
+btn1.onclick = function() {
+  modal1.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal1.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal1) {
+    modal1.style.display = "none";
+  }
+}
