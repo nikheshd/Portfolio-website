@@ -897,3 +897,13 @@ img {
 a { 
   color: inherit; 
 } 
+
+.links{
+  padding-left: 10px;
+}
+
+@media screen and (max-width: 700px){
+  .links{
+    display: none;
+  }
+}
