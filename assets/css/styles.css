@@ -249,8 +249,20 @@ img {
   transition: .3s;
 }
 
-.button:hover {
-  box-shadow: 0px 10px 36px rgba(0, 0, 0, 0.15);
+.button2{
+  display: inline-block;
+  background-color: white;
+  color: var(--first-color);
+  border-color: var(--first-color);
+  border-width: 1px;
+  padding: .75rem 2.5rem;
+  font-weight: var(--font-semi);
+  border-radius: .5rem;
+  transition: .3s;
+}
+
+.button:hover, .button2:hover {
+  box-shadow: 0px 10px 36px rgba(0, 0, 0, 0.2);
 }
 
 /* ===== ABOUT =====*/
@@ -819,7 +831,7 @@ img {
 }
 .hover-3 {
   --b: 0.1em;   /* the thickness of the line */
-  --c: #1095c1; /* the color */
+  --c: #3e6ff4; /* the color */
   
   color: #0000;
   padding-block: var(--b);
@@ -907,3 +919,5 @@ a {
     display: none;
   }
 }
+
+/* Download */
