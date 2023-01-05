@@ -130,7 +130,7 @@ img {
     position: fixed;
     top: var(--header-height);
     right: -100%;
-    width: 80%;
+    width: 40%;
     height: 100%;
     padding: 2rem;
     background-color: var(--second-color);
@@ -231,7 +231,7 @@ img {
 }
 
 .home__blob {
-  fill: var(--first-color);
+  fill: white;
 }
 
 .home__blob-img {
@@ -753,7 +753,7 @@ img {
   transition: .5s ease;
   opacity:0;
   color: white;
-  font-size: 10px;
+  font-size: 15px;
   padding: 20px;
   text-align: center;
 }
@@ -914,10 +914,15 @@ a {
   padding-left: 10px;
 }
 
+.hide_mobile{
+  font-size: 10px;
+}
+
 @media screen and (max-width: 700px){
   .links{
     display: none;
   }
 }
+
 
 /* Download */
