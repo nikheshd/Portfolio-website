@@ -48,9 +48,9 @@ const sr = ScrollReveal({
     duration: 2000,
     delay: 200,
 //     reset: true
-});
+}); 
 
-sr.reveal('.home__data, .about__img, .skills__subtitle, .skills__text, .education__container, .section-title',{delay: 50}); 
+sr.reveal('.home__data, .about__img, .skills__subtitle, .skills__text, .education__container, .section-title, .quote__cont',{delay: 50}); 
 sr.reveal('.home__img, .about__subtitle, .about__text, .skills__img',{delay: 100}); 
 sr.reveal('.home__social-icon',{ interval: 100}); 
 sr.reveal('.skills__data, .work__img, .contact__input',{interval: 100}); 
@@ -107,3 +107,59 @@ window.onclick = function(event) {
   else if(event.target==modal5) modal5.style.display = "none";
   else if(event.target==modal6) modal6.style.display = "none";
 }
+
+
+//quote
+// https://apis.ccbp.in/random-quote
+var url = "https://type.fit/api/quotes";
+var quotesArr;
+let quote = document.getElementById("quote");
+let authorEl = document.getElementById("author");
+function getquote() {
+    let options = {
+        method: "GET",
+    };
+    fetch(url, options)
+        .then(function (response) {
+            return response.json();
+        })
+        .then(function (jsonData) {
+            quotesArr = jsonData;
+        });
+}
+
+getquote()
+quote.textContent = "In a time of drastic change, it is the learners who inherit the future.";
+author.textContent = "-Eric Hoffer";
+let intervalId = setInterval(function () {
+    quote.textContent = "";
+    authorEl.textContent = "";
+    var curq = quotesArr[Math.floor(Math.random()*quotesArr.length)];
+    if(curq===undefined){
+        curq = {
+            text: "In a time of drastic change, it is the learners who inherit the future.",
+            author: "Eric Hoffer",
+        }
+    }
+    var str = curq.text;
+    var author = curq.author;
+    var i = 0;
+    let intervalId0 = setInterval(function () {
+        quote.textContent+= str[i];
+        i++;
+        if(i==str.length){
+            clearInterval(intervalId0);
+        }
+    }, 50);
+    var j=0;
+    if(author.length!=0){
+        authorEl.textContent = "-";
+        let intervalId1 = setInterval(function(){
+            authorEl.textContent+= author[j];
+            j++;
+            if(j==author.length){
+                clearInterval(intervalId1);
+            }
+        }, 50);
+    } 
+}, 60000);
