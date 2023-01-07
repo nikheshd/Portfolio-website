@@ -125,13 +125,18 @@ function getquote() {
         })
         .then(function (jsonData) {
             quotesArr = jsonData;
+        })
+        .then(function(){
+            changeQuote();
+        })
+        .then(function(){
+            let intervalId = setInterval(function () {
+                changeQuote();
+            }, 30000);
         });
 }
 
-getquote()
-quote.textContent = "In a time of drastic change, it is the learners who inherit the future.";
-author.textContent = "-Eric Hoffer";
-let intervalId = setInterval(function () {
+function changeQuote(){
     quote.textContent = "";
     authorEl.textContent = "";
     var curq = quotesArr[Math.floor(Math.random()*quotesArr.length)];
@@ -161,5 +166,25 @@ let intervalId = setInterval(function () {
                 clearInterval(intervalId1);
             }
         }, 50);
-    } 
-}, 30000);
+    }
+}
+
+getquote();
+
+// async.waterfall([
+//     // A list of functions
+//     function(callback){
+//         // Function no. 1 in sequence
+//         getquote();
+//         callback(null, arg);
+//     },
+//     function(arg, callback){
+//         // Function no. 2 in sequence
+//         changeQuote();
+//         callback(null);
+//     }
+//   ]);  
+
+// let intervalId = setInterval(function () {
+//     changeQuote();
+// }, 10000);
