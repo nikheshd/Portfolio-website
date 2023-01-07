@@ -162,4 +162,4 @@ let intervalId = setInterval(function () {
             }
         }, 50);
     } 
-}, 60000);
+}, 30000);
