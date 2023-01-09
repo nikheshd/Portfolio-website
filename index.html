@@ -17,6 +17,8 @@
         <script src="https://unpkg.com/feather-icons"></script>
         <link href = "https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel = "stylesheet">
         <link href = "https://fonts.googleapis.com/icon?family=Material+Icons" rel = "stylesheet">
+        <link href = "https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel = "stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <title>Nikhesh Portfolio</title>
     </head>
     <body>
@@ -26,7 +28,6 @@
                 <div>
                     <a href="#" class="nav__logo" style="text-decoration: none;">Dwara Nikhesh Babu</a>
                 </div>
-
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list">
                         <li class="nav__item"><a href="#home" style="text-decoration: none;" class="nav__link active">Home</a></li>
@@ -36,7 +37,14 @@
                         <li class="nav__item"><a href="#coursework" style="text-decoration: none;" class="nav__link">Coursework</a></li>
                     </ul>
                 </div>
-
+                <div id="darkmode">
+                    <input type="checkbox" class="checkbox" id="checkbox">
+                    <label for="checkbox" class="label">
+                      <i style="width: 16px;" class="fas fa-moon" data-feather="moon"></i>
+                      <i style="width: 16px;" class="fas fa-sun" data-feather="sun"></i>
+                      <div class='ball'>
+                    </label>
+                </div></div>
                 <div class="nav__toggle" id="nav-toggle">
                     <i class='bx bx-menu'></i>
                 </div>
@@ -47,11 +55,11 @@
             <!--===== HOME =====-->
             <section class="home bd-grid" id="home">
                 <div class="home__data">
-                    <h1 class="home__title">Hi,<br>I am <span class="font-weight-bold hover-3">Nikhesh</span><br> 
+                    <h1 class="home__title">Hello,<br>I am <span class="font-weight-bold hover-3">Nikhesh</span><br> 
                         <p style="font-size: 20px; padding-top: 10px">UG'23, IIT Kanpur</p></h1>
 
-                    <a href="mailto:nikhesh.dwara@gmail.com" style="text-decoration: none;" class="button">Contact</a>
-                    <a href="assets\Resume_phase1.pdf" target="_blank" download><button class="button2 ml-2">Download Resume</button></a>
+                    <a href="mailto:nikhesh.dwara@gmail.com" style="text-decoration: none;"><button class="button">Contact</button></a>
+                    <a href="assets\Nikhesh_resume.pdf" target="_blank" download><button class="button2 ml-2">Download Resume</button></a>
                 </div>
                 
                 <div class="home__social">
@@ -60,7 +68,6 @@
                     <a href="https://www.facebook.com/nikheshd" class="home__social-icon" target="_blank"><i class="bx bxl-facebook-circle"></i></a>
                     <a href="https://wa.me/917075624678" class="home__social-icon" target="_blank"><i class="bx bxl-whatsapp"></i></a>
                     <a href="mailto:nikhesh.dwara@gmail.com" class="home__social-icon" target="_blank"><i class="bx bx-mail-send"></i></a>
-
                 </div>
 
                 <div class="home__img">
@@ -70,7 +77,7 @@
                         </mask>
                         <g mask="url(#mask0)">
                             <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
-                            <image class="home__blob-img" x="-100" y="-60" href="assets/img/me2.jpg"/>
+                            <image class="home__blob-img" id="profile_img" x="-100" y="-60" href="assets/img/me2.jpg"/>
                         </g>
                     </svg>
                 </div>
@@ -91,10 +98,10 @@
                     <div class="education__timeline">
                         <div class="education__container right">
                           <div class="education__date">2019-23</div>
-                          <i class="icon fa fa-running"></i>
+                          <i class="icon fa fa-circle-o"></i>
                           <div class="education__content">
                             <h2>Indian Institute of Technology Kanpur</h2>
-                            <p>
+                            <div style="color: black !important;">
                                 <div style="font-size: 10px;">
                                     Major: Mechanical Engg.<br>
                                     Minors: Control Systems in Electrical Engg.,<br>
@@ -102,12 +109,12 @@
                                 </div>
                                 B.Tech. <br>
                                 Grade: 8.43/10
-                            </p>
+                            </div>
                           </div>
                         </div>
                         <div class="education__container left">
                           <div class="education__date">2017-19</div>
-                          <i class="icon fa fa-cog"></i>
+                          <i class="icon fa fa-circle"></i>
                           <div class="education__content">
                             <h2>FIITJEE Junior College, Vizag, AP</h2>
                             <p>
@@ -118,7 +125,7 @@
                         </div>
                         <div class="education__container right">
                           <div class="education__date">2007-17</div>
-                          <i class="icon fa fa-certificate"></i>
+                          <i class="icon fa fa-circle"></i>
                           <div class="education__content">
                             <h2>The Sun School, Vizianagaram, AP</h2>
                             <p>
@@ -198,15 +205,15 @@
                                 <br><br>
                                 <span style="font-weight: bold;">Functionalities</span> <br>
                                 <ol style="text-align: left;">
-<li>When the text in the HTML paragraph element with id quoteDisplay and the value entered in HTML textarea element with id quoteInput are not the same, and the HTML button element with id submitBtn is clicked an error message should be shown in the HTML paragraph element with id result </li>
-    <li>When the text in the HTML paragraph element with id quoteDisplay and the value entered in HTML textarea element with id quoteInput are not the same, and the HTML button element with id submitBtn is clicked the timer should be running</li>
-        <li>When the text in HTML paragraph element with id quoteDisplay is entered in HTML textarea element, and the HTML button element with id submitBtn is clicked a success message should be shown in HTML paragraph element with id result</li>
-            <li>The HTML paragraph element with id timer should always have numbers greater than or equals to 0</li>
-                <li>When the text in HTML paragraph element with id quoteDisplay is entered in HTML textarea element, and the HTML button element with id submitBtn is clicked the timer should stop</li>
-                    <li>When the reset button is clicked, an HTTP request should be made to get a random quotation from the given URL and the value in the HTML paragraph element with id quoteDisplay should be replaced with quotation received in the response</li>
-                        <li>When page is opened, an HTTP request should be made to get a random quotation from the given URL and the HTML paragraph element with id quoteDisplay should have the quotation received in the response.</li>
-</ol>
-<br>and more...
+                                    <li>When the text in the HTML paragraph element with id quoteDisplay and the value entered in HTML textarea element with id quoteInput are not the same, and the HTML button element with id submitBtn is clicked an error message should be shown in the HTML paragraph element with id result </li>
+                                    <li>When the text in the HTML paragraph element with id quoteDisplay and the value entered in HTML textarea element with id quoteInput are not the same, and the HTML button element with id submitBtn is clicked the timer should be running</li>
+                                    <li>When the text in HTML paragraph element with id quoteDisplay is entered in HTML textarea element, and the HTML button element with id submitBtn is clicked a success message should be shown in HTML paragraph element with id result</li>
+                                    <li>The HTML paragraph element with id timer should always have numbers greater than or equals to 0</li>
+                                    <li>When the text in HTML paragraph element with id quoteDisplay is entered in HTML textarea element, and the HTML button element with id submitBtn is clicked the timer should stop</li>
+                                    <li>When the reset button is clicked, an HTTP request should be made to get a random quotation from the given URL and the value in the HTML paragraph element with id quoteDisplay should be replaced with quotation received in the response</li>
+                                    <li>When page is opened, an HTTP request should be made to get a random quotation from the given URL and the HTML paragraph element with id quoteDisplay should have the quotation received in the response.</li>
+                                </ol>
+                                <br>and more...
                             </p>
                         </div>
                     </div>
@@ -254,7 +261,7 @@
                                     iitkms</span></a>
                             </div>
                             <p>
-                                <img style="margin: 5% auto" src="https://media.licdn.com/dms/image/C4D2DAQE9dT1EOrJVng/profile-treasury-image-shrink_800_800/0/1671346506738?e=1673182800&v=beta&t=nTJyTeyluG58OEb9aKXqGFH246xk_7iDgJlP4auNbUs">
+                                <img style="margin: 5% auto" src="assets/img/iitkms.jpg">
                                 <div>
                                     <p style="font-weight: bold;">Achievements</p>
                                     <ol style="text-align: left;">
@@ -456,10 +463,13 @@
 
             <!--======== Quote =========-->
             <div class="quote__cont">
-                <div class="pt-3"><span class="material-icons-outlined" style="opacity: 0.5">format_quote</span></div>
+                <div class="pt-3"><span class="material-icons-round">format_quote</span></div>
                 <p id="quote" class="fancy"></p>
-                <p id="author" class="pb-3"></p>
-                <!-- <span class="material-icons-outlined" style="opacity: 0.5;">format_quote</span> -->
+                <p id="author"></p>
+                <div style="padding-bottom: 10px;">
+                    <i id="refresh" class="fa fa-rotate-right" style="font-size:24px"></i>
+                    <i id="spinner" class="fa fa-circle-o-notch fa-spin d-none" style="font-size:24px"></i>
+                </div>
             </div>
         </main>
 

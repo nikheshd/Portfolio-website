@@ -110,9 +110,14 @@ window.onclick = function(event) {
 
 
 //quote
+
+var ref = document.getElementById("refresh");
+var spinner = document.getElementById("spinner");
+
 // https://apis.ccbp.in/random-quote
-var url = "https://type.fit/api/quotes";
-var quotesArr;
+// https://api.quotable.io/random
+var url = "https://api.quotable.io/random";
+var cur_quote;
 let quote = document.getElementById("quote");
 let authorEl = document.getElementById("author");
 function getquote() {
@@ -124,26 +129,23 @@ function getquote() {
             return response.json();
         })
         .then(function (jsonData) {
-            quotesArr = jsonData;
-        })
-        .then(function(){
+            cur_quote = jsonData;
             changeQuote();
-        })
-        .then(function(){
-            let intervalId = setInterval(function () {
-                changeQuote();
-            }, 30000);
         });
 }
 
 function changeQuote(){
     quote.textContent = "";
     authorEl.textContent = "";
-    var curq = quotesArr[Math.floor(Math.random()*quotesArr.length)];
-    if(curq===undefined){
+    if(cur_quote===undefined){
         curq = {
             text: "In a time of drastic change, it is the learners who inherit the future.",
             author: "Eric Hoffer",
+        }
+    }else{
+        curq = {
+            text: cur_quote["content"],
+            author: cur_quote["author"],
         }
     }
     var str = curq.text;
@@ -154,6 +156,8 @@ function changeQuote(){
         i++;
         if(i==str.length){
             clearInterval(intervalId0);
+            spinner.classList.add("d-none");
+            ref.classList.remove("d-none");
         }
     }, 50);
     var j=0;
@@ -169,22 +173,41 @@ function changeQuote(){
     }
 }
 
+ref.classList.add("d-none");
+spinner.classList.remove("d-none");
 getquote();
 
-// async.waterfall([
-//     // A list of functions
-//     function(callback){
-//         // Function no. 1 in sequence
-//         getquote();
-//         callback(null, arg);
-//     },
-//     function(arg, callback){
-//         // Function no. 2 in sequence
-//         changeQuote();
-//         callback(null);
-//     }
-//   ]);  
+const checkbox = document.getElementById('checkbox');
 
-// let intervalId = setInterval(function () {
-//     changeQuote();
-// }, 10000);
+let theme = localStorage.getItem("theme");
+if(theme===null){
+    localStorage.setItem("theme","light");
+}else if(theme==="dark"){
+    checkbox.checked = !checkbox.checked;
+    // change to dark mode
+    document.body.classList.toggle('dark');
+}
+
+checkbox.addEventListener('change', (event)=>{
+  if(theme==="light"){
+    localStorage.setItem("theme","dark");
+    theme="dark";
+  }else{
+    localStorage.setItem("theme","light");
+    theme="light";
+  }
+  document.body.classList.toggle('dark');
+});
+
+var imgel = document.getElementById("profile_img");
+imgel.href = "./assets/img/me2.jpg"
+
+ref.addEventListener('click',()=>{
+    ref.classList.add("d-none");
+    spinner.classList.remove("d-none");
+    getquote();
+    var img1 = "/assets/img/me2.jpg";
+    var img2 = "/assets/img/me2_dark.jpg";
+    var imgel = document.getElementById("profile_img");
+    imgel.setAttribute("href","");
+});
