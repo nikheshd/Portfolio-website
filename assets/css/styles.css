@@ -44,6 +44,7 @@ html {
 }
 
 body {
+  --home_bg: white;
   --bgcolor-1: #3e6ff4;
   --bgcolor-2: #0d1730;
   --txtcolor: black;
@@ -61,6 +62,7 @@ body {
 }
 
 body.dark {
+  --home_bg: #0d1730;
   --bgcolor-1: #0d1730;
   --bgcolor-2: black;
   --txtcolor: white;
@@ -258,7 +260,7 @@ img {
 }
 
 .home__blob {
-  fill: white;
+  fill: var(--home_bg);
   filter: brightness(var(--img-brightness));
 }
 
