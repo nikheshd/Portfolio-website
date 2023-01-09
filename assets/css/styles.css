@@ -917,6 +917,7 @@ a {
     font-size: 15px;
   }
   #author{
+    margin-right: 10%;
     font-size: 10px;
   }
   iframe{
@@ -957,7 +958,7 @@ a {
   background-color: var(--ballcolor);
   position: absolute;
   top: 3px;
-  left: 2px;
+  left: 3px;
   border-radius: 50%;
   transition: transform 0.2s linear;
 }
@@ -979,7 +980,7 @@ a {
   #darkmode{
     margin: 10px;
     margin-left: auto;
-    margin-right: 30px;
+    margin-right: 15px;
   }
   .label{
     transform: scale(1);
