@@ -177,15 +177,19 @@ ref.classList.add("d-none");
 spinner.classList.remove("d-none");
 getquote();
 
+
+//dark mode
 const checkbox = document.getElementById('checkbox');
 
 let theme = localStorage.getItem("theme");
-if(theme===null){
-    localStorage.setItem("theme","light");
-}else if(theme==="dark"){
-    checkbox.checked = !checkbox.checked;
+if(theme==="dark"){
     // change to dark mode
     document.body.classList.toggle('dark');
+    localStorage.setItem("theme","light");
+}else{
+    checkbox.checked = !checkbox.checked;
+    localStorage.setItem("theme","light");
+    theme="light";
 }
 
 checkbox.addEventListener('change', (event)=>{
