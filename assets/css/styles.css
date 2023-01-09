@@ -68,8 +68,8 @@ body.dark {
   --modal-bg: #0d1730;
   --quotebg: #1d3473;
   --authortxt: #9a8d93;
-  --ballcolor: #25abe0;
-  --ballbg: #092c3d;
+  --ballcolor: #092c3d;
+  --ballbg: #25abe0;
   --img-brightness: 75%;
   background-color: var(--bgcolor-1);
   color: var(--txtcolor);
@@ -956,7 +956,7 @@ a {
   height: 20px;
   background-color: var(--ballcolor);
   position: absolute;
-  top: 2px;
+  top: 3px;
   left: 2px;
   border-radius: 50%;
   transition: transform 0.2s linear;
@@ -980,5 +980,8 @@ a {
     margin: 10px;
     margin-left: auto;
     margin-right: 30px;
+  }
+  .label{
+    transform: scale(1);
   }
 }
