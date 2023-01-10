@@ -261,11 +261,11 @@ img {
 
 .home__blob {
   fill: var(--home_bg);
-  filter: brightness(var(--img-brightness));
 }
 
 .home__blob-img {
   width: 700px;
+  filter: brightness(var(--img-brightness));
 }
 
 /*BUTTONS*/
