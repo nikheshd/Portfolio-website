@@ -211,3 +211,28 @@ ref.addEventListener('click',()=>{
     spinner.classList.remove("d-none");
     getquote();
 });
+
+function callbackFunc(entries, observer)
+{
+  entries.forEach(entry => {
+    if(entry.isIntersecting){
+        document.getElementById('img_container').style.transform = "scale(0.5)";
+        document.getElementById('prof_img').style.transform = "scale(1.7)";
+    }else{
+        document.getElementById('img_container').style.transform = "";
+        document.getElementById('prof_img').style.transform = "";
+    }
+  });
+}
+
+let options = {
+    root: null,
+    rootMargin: '0px',
+    threshold: 1.0
+  };
+
+let observer = new IntersectionObserver(callbackFunc, options);
+
+observer.observe(document.getElementById('img_trigger'));
+// observer.observe(document.getElementById('home'));
+// observer.observe(document.getElementById('img_container'));
