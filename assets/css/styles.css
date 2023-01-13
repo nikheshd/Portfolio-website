@@ -210,11 +210,13 @@ img {
   background-color: var(--first-color);
 }
 
+/* ------------------------------------------------- */
 /*=== Show menu ===*/
 .show {
   right: 0;
 }
 
+/* ------------------------------------------------- */
 /*===== HOME =====*/
 .home {
   position: relative;
@@ -279,6 +281,7 @@ img {
   filter: brightness(var(--img-brightness));
 }
 
+/* ------------------------------------------------- */
 /*BUTTONS*/
 .button {
   display: inline-block;
@@ -307,6 +310,7 @@ img {
   box-shadow: 0px 10px 36px rgba(0, 0, 0, 0.2);
 }
 
+/* ------------------------------------------------- */
 /* ===== ABOUT =====*/
 .about__container {
   row-gap: 2rem;
@@ -399,6 +403,7 @@ img {
   border-radius: .5rem;
 }
 
+/* ------------------------------------------------- */
 /* ===== WORK =====*/
 .work__container {
   row-gap: 2rem;
@@ -417,27 +422,6 @@ img {
 .work__img img:hover{
   transform: scale(1.1);
   
-}
-
-/* ===== CONTACT =====*/
-.contact__input {
-  width: 100%;
-  font-size: var(--normal-font-size);
-  font-weight: var(--font-semi);
-  padding: 1rem;
-  border-radius: .5rem;
-  border: 1.5px solid var(--second-color);
-  outline: none;
-  margin-bottom: var(--mb-4);
-}
-
-.contact__button {
-  display: block;
-  border: none;
-  outline: none;
-  font-size: var(--normal-font-size);
-  cursor: pointer;
-  margin-left: auto;
 }
 
 /* ===== FOOTER =====*/
@@ -468,6 +452,7 @@ img {
   font-size: var(--smaller-font-size);
 }
 
+/* ------------------------------------------------- */
 /* ===== MEDIA QUERIES=====*/
 
 @media screen and (min-width: 576px) {
@@ -560,7 +545,7 @@ img {
   }
 }
 
-
+/* ------------------------------------------------- */
 /* EDUCATION */
 
 *::before,
@@ -755,7 +740,7 @@ img {
 }
 
 
-
+/* ------------------------------------------------- */
 /* work title */
 .overlay {
   position: absolute;
@@ -781,7 +766,7 @@ img {
   height:100%;
 }
 
-
+/* ------------------------------------------------- */
 /* Hover */
 .hover-3 {
   --b: 0.1em;   /* the thickness of the line */
@@ -801,6 +786,8 @@ img {
   --_s: .3s;
 }
 
+
+/* ------------------------------------------------- */
 /* modal */
 
 /* The Modal (background) */
@@ -861,19 +848,15 @@ a {
   }
 }
 
-
+/* ------------------------------------------------- */
 /* quote */
+
 .quote__cont{
   text-align: center;
   margin: 25px;
   margin-left: 10%;
   margin-right: 10%;
   border-radius: 20px;
-  /* background-image: url("https://i.pinimg.com/736x/c9/4d/ae/c94dae561b35094d92cb445634b6fd53.jpg");
-  background-size: 300px;
-  background-repeat: no-repeat;
-  background-position: center; */
-  /* min-height: 120px; */
   background-color: var(--quotebg);
 }
 #quote{
@@ -913,61 +896,8 @@ a {
   }
 }
 
-/* dark-light mode */
-
-/* .checkbox {
-  opacity: 0;
-  position: absolute;
-}
-
-.label {
-  width: 50px;
-  height: 26px;
-  background-color: var(--ballbg);
-  display: flex;
-  border-radius:50px;
-  align-items: center;
-  justify-content: space-between;
-  padding: 5px;
-  position: relative;
-  transform: scale(1.5);
-}
-
-.ball {
-  width: 20px;
-  height: 20px;
-  background-color: var(--ballcolor);
-  position: absolute;
-  top: 3px;
-  left: 3px;
-  border-radius: 50%;
-  transition: transform 0.2s linear;
-}*/
-
-/*  target the element after the label*/
-/* .checkbox:checked + .label .ball{
-  transform: translateX(24px);
-}
-
-.fa-moon {
-  color: white;
-}
-
-.fa-sun {
-  color: white;
-}
-
-@media screen and (max-width: 767px) {
-  #darkmode{
-    margin: 10px;
-    margin-left: auto;
-    margin-right: 15px;
-  }
-  .label{
-    transform: scale(1);
-  }
-} */ 
-
+/* ------------------------------------------------- */
+/* dark light modes */
 
 .dm_label{
   margin-left: 30px;
@@ -1151,6 +1081,8 @@ a {
     }
   }
 
+
+  /* ------------------------------------------------- */
   /* navbutton */
   .nav_menu {
     background-color: transparent;
@@ -1194,7 +1126,7 @@ a {
     stroke-width: 6;
   }
   
-
+/* ------------------------------------------------- */
   /* image */
 
 .img_container {
@@ -1249,4 +1181,13 @@ a {
   top: 400px;
   width: 340px;
   transform: scale(1.5);
+}
+
+@media screen and (max-width: 760px){
+  .img_container{
+    pointer-events: none;
+  }
+  .home:hover .prof_img {
+    transform: translateY(0) scale(1.7);
+  }
 }
