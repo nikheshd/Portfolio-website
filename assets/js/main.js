@@ -5,6 +5,8 @@ const showMenu = (toggleId, navId) =>{
 
     if(toggle && nav){
         toggle.addEventListener('click', ()=>{
+            var nav_btn = document.getElementById("nav_btn");
+            nav_btn.classList.toggle('opened');
             nav.classList.toggle('show')
         })
     }
@@ -18,6 +20,8 @@ function linkAction(){
     const navMenu = document.getElementById('nav-menu')
     // When we click on each nav__link, we remove the show-menu class
     navMenu.classList.remove('show')
+    var nav_btn = document.getElementById("nav_btn");
+    nav_btn.classList.toggle('opened')
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
