@@ -206,15 +206,8 @@ checkbox.addEventListener('change', (event)=>{
   document.body.classList.toggle('dark');
 });
 
-var imgel = document.getElementById("profile_img");
-imgel.href = "./assets/img/me2.jpg"
-
 ref.addEventListener('click',()=>{
     ref.classList.add("d-none");
     spinner.classList.remove("d-none");
     getquote();
-    var img1 = "/assets/img/me2.jpg";
-    var img2 = "/assets/img/me2_dark.jpg";
-    var imgel = document.getElementById("profile_img");
-    imgel.setAttribute("href","");
 });
