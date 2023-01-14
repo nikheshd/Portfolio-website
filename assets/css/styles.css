@@ -266,8 +266,9 @@ img {
 @media screen and (max-width: 760px){
   .home__img{
     top: 300px;
-    left: 50px;
-    margin-right: 200px;
+    left: 19px;
+    /* padding-right: 10px; */
+    /* margin-right: 200px; */
     transform: scale(1.2);
   }
 }
