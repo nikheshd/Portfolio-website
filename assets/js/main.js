@@ -240,7 +240,7 @@ observer.observe(document.getElementById('img_trigger'));
 
 //website reload after certain width
 var ww = $(window).width();
-var limit = 700;
+var limit = 900;
 
 function refresh() {
    ww = $(window).width();
