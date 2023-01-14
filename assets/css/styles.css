@@ -266,7 +266,7 @@ img {
 @media screen and (max-width: 760px){
   .home__img{
     top: 300px;
-    left: 0px;
+    left: 60px;
     margin-right: 200px;
     transform: scale(1.2);
   }
@@ -1081,6 +1081,9 @@ a {
       left: -20px;
       margin-top: 20px;
     }
+    .about__subtitle{
+      font-size: 20px;
+    }
   }
 
 
@@ -1158,7 +1161,9 @@ a {
   top: -200px;
 }
 .img_circle {
-  background-color: #a7ddf2;
+  background-image: url("");
+  background-size: cover;
+  background-color: var(--home_bg);
   border-radius: 50%;
   cursor: pointer;
   height: 380px;
