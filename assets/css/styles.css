@@ -1228,8 +1228,8 @@ a {
 /* SCROLL TO TOP */
 #btn-back-to-top {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 8%;
+  right: 8%;
   display: none;
   border-radius: 50%;
   height: 50px;
