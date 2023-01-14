@@ -54,6 +54,7 @@ body {
   --authortxt: #595557;
   --ballcolor: #eddda8;
   --ballbg: #e5b731;
+  --scrolltotop_bg: #86d3ff;
   --img-brightness: 100%;
   margin: var(--header-height) 0 0 0;
   font-family: var(--body-font);
@@ -72,6 +73,7 @@ body.dark {
   --authortxt: #9a8d93;
   --ballcolor: #092c3d;
   --ballbg: #25abe0;
+  --scrolltotop_bg: #314374;
   --img-brightness: 100%;
   background-color: var(--bgcolor-1);
   color: var(--txtcolor);
@@ -1221,3 +1223,18 @@ a {
     justify-content: center;
   }
 } */
+
+
+/* SCROLL TO TOP */
+#btn-back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  background-color: var(--scrolltotop_bg);
+  color: var(--txtcolor);
+}
