@@ -1,17 +1,19 @@
-// preloading
-var preloader = document.getElementById("preloader");
-var main_page = document.getElementById("main_page");
+
+// var preloader = document.getElementById("preloader");
+// var main_page = document.getElementById("main_page");
 // preloader.classList.add("d-none");
 // main_page.classList.remove("d-none");
 
+// preloading
+var preloader = document.getElementById("preloader");
+var main_page = document.getElementById("main_page");
 var t = 0;
-var loading_time = 2; //secs
+var loading_time = 4; //secs
 var xintervalId = setInterval(function (){
-    t = t+1;
+    t = t+0.1;
     if(t>loading_time){
+        preloader.classList.add("d-none");
         main_page.classList.remove("d-none");
-
-
 
 
 
@@ -77,8 +79,8 @@ const sr = ScrollReveal({
 //     reset: true
 }); 
 
-sr.reveal('.home__data, .about__img, .skills__subtitle, .skills__text, .education__container, .section-title, .quote__cont',{delay: 50}); 
-sr.reveal('.home__img, .about__subtitle, .about__text, .skills__img',{delay: 100}); 
+sr.reveal('.about__img, .skills__subtitle, .skills__text, .education__container, .section-title,',{delay: 50}); 
+sr.reveal('.about__subtitle, .about__text, .skills__img',{delay: 100}); 
 sr.reveal('.home__social-icon',{ interval: 100}); 
 sr.reveal('.skills__data, .work__img, .contact__input',{interval: 100}); 
 
@@ -332,7 +334,6 @@ function backToTop() {
 
 
 
-        preloader.classList.add("d-none");
         clearInterval(xintervalId);
     }
-}, 1000);
+}, 100);
