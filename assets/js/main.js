@@ -1,3 +1,26 @@
+// preloading
+var preloader = document.getElementById("preloader");
+var main_page = document.getElementById("main_page");
+// preloader.classList.add("d-none");
+// main_page.classList.remove("d-none");
+
+var t = 0;
+var loading_time = 2; //secs
+var xintervalId = setInterval(function (){
+    t = t+1;
+    if(t>loading_time){
+        main_page.classList.remove("d-none");
+
+
+
+
+
+
+
+
+
+
+
 /*===== MENU SHOW =====*/ 
 const showMenu = (toggleId, navId) =>{
     const toggle = document.getElementById(toggleId),
@@ -238,23 +261,23 @@ observer.observe(document.getElementById('img_trigger'));
 // observer.observe(document.getElementById('img_container'));
 
 
-//website reload after certain width
-var ww = $(window).width();
-var limit = 900;
+// //website reload after certain width
+// var ww = $(window).width();
+// var limit = 900;
 
-function refresh() {
-   ww = $(window).width();
-   var w =  ww<limit ? (location.reload(true)) :  ( ww>limit ? (location.reload(true)) : ww=limit );
-}
+// function refresh() {
+//    ww = $(window).width();
+//    var w =  ww<limit ? (location.reload(true)) :  ( ww>limit ? (location.reload(true)) : ww=limit );
+// }
 
-var tOut;
-$(window).resize(function() {
-    var resW = $(window).width();
-    clearTimeout(tOut);
-    if ( (ww>limit && resW<limit) || (ww<limit && resW>limit) ) {        
-        tOut = setTimeout(refresh, 100);
-    }
-});
+// var tOut;
+// $(window).resize(function() {
+//     var resW = $(window).width();
+//     clearTimeout(tOut);
+//     if ( (ww>limit && resW<limit) || (ww<limit && resW>limit) ) {        
+//         tOut = setTimeout(refresh, 100);
+//     }
+// });
 
 
 //profile image random background
@@ -289,3 +312,27 @@ function backToTop() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        preloader.classList.add("d-none");
+        clearInterval(xintervalId);
+    }
+}, 1000);

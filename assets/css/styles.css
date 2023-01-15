@@ -1240,3 +1240,21 @@ a {
   background-color: var(--scrolltotop_bg);
   color: var(--txtcolor);
 }
+
+#preloader{
+  justify-content: center;
+  min-width: 100%;
+  min-height: 70vh;
+}
+
+#preloaderimg{
+  margin: auto;
+  padding: 10%; 
+  width: 50%;
+}
+
+@media screen and (max-width: 760px){
+  #preloaderimg{
+    width: 100%;
+  }
+}

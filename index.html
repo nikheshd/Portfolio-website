@@ -22,500 +22,511 @@
         <title>Nikhesh Portfolio</title>
     </head>
     <body>
+        <!--========== preloading screen ==========-->
+        <div id="preloader" class="">
+            <header class="l-header" >
+                <nav class="nav bd-grid">
+                    <div>
+                        <a href="https://nikheshd.github.io/Portfolio-website/" class="nav__logo" style="text-decoration: none;">Nikhesh</a>
+                    </div>
+                </nav>
+            </header>
+            <img id="preloaderimg" src="https://cdn.dribbble.com/users/332946/screenshots/3296132/n.gif" title="Loading">
+        </div>
+
+
+
         <!--===== HEADER =====-->
-        <header class="l-header">
-            <nav class="nav bd-grid">
-                <div>
-                    <a href="https://nikheshd.github.io/Portfolio-website/" class="nav__logo" style="text-decoration: none;">Dwara Nikhesh Babu</a>
-                </div>
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item"><a href="#home" style="text-decoration: none;" class="nav__link active">Home</a></li>
-                        <li class="nav__item"><a href="#about" style="text-decoration: none;" class="nav__link">About</a></li>
-                        <li class="nav__item"><a href="#skills" style="text-decoration: none;" class="nav__link">Skills</a></li>
-                        <li class="nav__item"><a href="#work" style="text-decoration: none;" class="nav__link">Projects</a></li>
-                        <li class="nav__item"><a href="#coursework" style="text-decoration: none;" class="nav__link">Coursework</a></li>
-                        <li class="dm_label"> 
-                            <input type="checkbox" name="checkbox" class="switch" id="checkbox">
-                        </li>
-                    </ul>
-                </div>
-                <!-- <div id="darkmode">
-                    <input type="checkbox" class="checkbox" id="checkbox">
-                    <label for="checkbox" class="label">
-                      <i style="width: 16px;" class="fas fa-moon" data-feather="moon"></i>
-                      <i style="width: 16px;" class="fas fa-sun" data-feather="sun"></i>
-                      <div class='ball'>
-                    </label>
-                </div></div> -->
-                <div class="nav__toggle" id="nav-toggle">
-                    <button class="nav_menu" id="nav_btn" style="outline: none">
-                        <svg width="30" height="30" viewBox="0 0 100 100">
-                          <path class="nav_menu_line nav_menu_line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
-                          <path class="nav_menu_line nav_menu_line2" d="M 20,50 H 80" />
-                          <path class="nav_menu_line nav_menu_line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
-                        </svg>
-                      </button>
-                    <!-- <i class='bx bx-menu'></i> -->
-                </div>
-            </nav>
-        </header>
+        <div id="main_page" class="d-none">
+            <header class="l-header" >
+                <nav class="nav bd-grid">
+                    <div>
+                        <a href="https://nikheshd.github.io/Portfolio-website/" class="nav__logo" style="text-decoration: none;">Nikhesh</a>
+                    </div>
+                    <div class="nav__menu" id="nav-menu">
+                        <ul class="nav__list">
+                            <li class="nav__item"><a href="#home" style="text-decoration: none;" class="nav__link active">Home</a></li>
+                            <li class="nav__item"><a href="#about" style="text-decoration: none;" class="nav__link">About</a></li>
+                            <li class="nav__item"><a href="#skills" style="text-decoration: none;" class="nav__link">Skills</a></li>
+                            <li class="nav__item"><a href="#work" style="text-decoration: none;" class="nav__link">Projects</a></li>
+                            <li class="nav__item"><a href="#coursework" style="text-decoration: none;" class="nav__link">Coursework</a></li>
+                            <li class="dm_label"> 
+                                <input type="checkbox" name="checkbox" class="switch" id="checkbox">
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- <div id="darkmode">
+                        <input type="checkbox" class="checkbox" id="checkbox">
+                        <label for="checkbox" class="label">
+                        <i style="width: 16px;" class="fas fa-moon" data-feather="moon"></i>
+                        <i style="width: 16px;" class="fas fa-sun" data-feather="sun"></i>
+                        <div class='ball'>
+                        </label>
+                    </div></div> -->
+                    <div class="nav__toggle" id="nav-toggle">
+                        <button class="nav_menu" id="nav_btn" style="outline: none">
+                            <svg width="30" height="30" viewBox="0 0 100 100">
+                            <path class="nav_menu_line nav_menu_line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                            <path class="nav_menu_line nav_menu_line2" d="M 20,50 H 80" />
+                            <path class="nav_menu_line nav_menu_line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                            </svg>
+                        </button>
+                        <!-- <i class='bx bx-menu'></i> -->
+                    </div>
+                </nav>
+            </header>
 
-        <main class="l-main">
-            <!--===== HOME =====-->
-            <div id="img_trigger"></div>
-            <section class="home bd-grid" id="home">
-                <div class="home__data">
-                    <h1 class="home__title">Hello,<br>I am <span class="font-weight-bold hover-3">Nikhesh</span><br> 
-                        <p style="font-size: 20px; padding-top: 10px">UG'23, IIT Kanpur</p></h1>
+            <main class="l-main" id="main">
+                <!--===== HOME =====-->
+                <div id="img_trigger"></div>
+                <section class="home bd-grid" id="home">
+                    <div class="home__data">
+                        <h1 class="home__title">Hello,<br>I am <span class="font-weight-bold hover-3">Nikhesh</span><br> 
+                            <p style="font-size: 20px; padding-top: 10px">UG'23, IIT Kanpur</p></h1>
 
-                    <a href="mailto:nikhesh.dwara@gmail.com" style="text-decoration: none;"><button class="button">Contact</button></a>
-                    <a href="assets\Nikhesh_resume.pdf" target="_blank"><button class="button2 ml-2">Download Resume</button></a>
-                </div>
-                
-                <div class="home__social">
-                    <a href="https://www.linkedin.com/in/nikhesh-babu/" class="home__social-icon" target="_blank"><i class='bx bxl-linkedin'></i></a>
-                    <a href="https://github.com/nikheshd/" class="home__social-icon" target="_blank"><i class='bx bxl-github' ></i></a>
-                    <a href="https://www.facebook.com/nikheshd" class="home__social-icon" target="_blank"><i class="bx bxl-facebook-circle"></i></a>
-                    <a href="https://wa.me/917075624678" class="home__social-icon" target="_blank"><i class="bx bxl-whatsapp"></i></a>
-                    <a href="mailto:nikhesh.dwara@gmail.com" class="home__social-icon" target="_blank"><i class="bx bx-mail-send"></i></a>
-                </div>
+                        <a href="mailto:nikhesh.dwara@gmail.com" style="text-decoration: none;"><button class="button">Contact</button></a>
+                        <a href="assets\Nikhesh_resume.pdf" target="_blank"><button class="button2 ml-2">Download Resume</button></a>
+                    </div>
+                    
+                    <div class="home__social">
+                        <a href="https://www.linkedin.com/in/nikhesh-babu/" class="home__social-icon" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                        <a href="https://github.com/nikheshd/" class="home__social-icon" target="_blank"><i class='bx bxl-github' ></i></a>
+                        <a href="https://www.facebook.com/nikheshd" class="home__social-icon" target="_blank"><i class="bx bxl-facebook-circle"></i></a>
+                        <a href="https://wa.me/917075624678" class="home__social-icon" target="_blank"><i class="bx bxl-whatsapp"></i></a>
+                        <a href="mailto:nikhesh.dwara@gmail.com" class="home__social-icon" target="_blank"><i class="bx bx-mail-send"></i></a>
+                    </div>
 
-                <div class="home__img">
-                    <!-- <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <mask id="mask0" mask-type="alpha">
-                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
-                        </mask>
-                        <g mask="url(#mask0)">
-                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
-                            <image class="home__blob-img" id="profile_img" x="-100" y="-100" href="/assets/img/me2_nobg.png"/>
-                        </g>
-                    </svg> -->
-                    <div class="img_container" id="img_container">
-                        <div class="img_container-inner" style="font-size: 10px;" id="img_container-inner">
-                            <div class="img_circle" id="img_circle" src=""></div>
-                            <img class="prof_img prof_img1" id="prof_img" src="assets/img/me2_nobg.png" alt="............... image loading..">
+                    <div class="home__img">
+                        <!-- <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <mask id="mask0" mask-type="alpha">
+                                <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                            </mask>
+                            <g mask="url(#mask0)">
+                                <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                                <image class="home__blob-img" id="profile_img" x="-100" y="-100" href="/assets/img/me2_nobg.png"/>
+                            </g>
+                        </svg> -->
+                        <div class="img_container" id="img_container">
+                            <div class="img_container-inner" style="font-size: 10px;" id="img_container-inner">
+                                <div class="img_circle" id="img_circle" src=""></div>
+                                <img class="prof_img prof_img1" id="prof_img" src="assets/img/me2_nobg.png" alt="............... image loading..">
+                            </div>
                         </div>
                     </div>
+                </section>
+
+                <!--======== Quote =========-->
+                <div class="quote__cont">
+                    <div class="pt-3"><span class="material-icons-round">format_quote</span></div>
+                    <p id="quote" class="fancy"></p>
+                    <p id="author"></p>
+                    <div style="padding-bottom: 10px;">
+                        <i id="refresh" title="reload" class="fa fa-rotate-right" style="font-size:24px"></i>
+                        <i id="spinner" title="loading..." class="fa fa-circle-o-notch fa-spin d-none" style="font-size:24px"></i>
+                    </div>
                 </div>
-            </section>
 
-            <!--======== Quote =========-->
-            <div class="quote__cont">
-                <div class="pt-3"><span class="material-icons-round">format_quote</span></div>
-                <p id="quote" class="fancy"></p>
-                <p id="author"></p>
-                <div style="padding-bottom: 10px;">
-                    <i id="refresh" title="reload" class="fa fa-rotate-right" style="font-size:24px"></i>
-                    <i id="spinner" title="loading..." class="fa fa-circle-o-notch fa-spin d-none" style="font-size:24px"></i>
-                </div>
-            </div>
+                <!--===== ABOUT =====-->
+                <section class="about section " id="about">
+                    <h2 class="section-title">About</h2>
 
-            <!--===== ABOUT =====-->
-            <section class="about section " id="about">
-                <h2 class="section-title">About</h2>
-
-                <div class="about__container bd-grid">
-                    <h2 class="about__subtitle">Summary</h2>
-                    <p class="about__text">
-                        I am a smart working individual with a computing mindset, interested to dive into any field demanding high analytical, problem solving and coding skills.
-                    </p>     
-                    <h2 class="about__subtitle">Education</h2>
-                    
-                    <!--========== EDUCATION =========-->
-                    <div class="education__timeline">
-                        <div class="education__container right">
-                          <div class="education__date">2019-23</div>
-                          <i class="icon fa fa-circle-o"></i>
-                          <div class="education__content">
-                            <h2>Indian Institute of Technology Kanpur</h2>
-                            <div style="color: black !important;">
-                                <div style="font-size: 10px;">
-                                    Major: Mechanical Engg.<br>
-                                    Minors: Control Systems in Electrical Engg.,<br>
-                                            Industrial and Management Engg.
+                    <div class="about__container bd-grid">
+                        <h2 class="about__subtitle">Summary</h2>
+                        <p class="about__text">
+                            I am a smart working individual with a computing mindset, interested to dive into any field demanding high analytical, problem solving and coding skills.
+                        </p>     
+                        <h2 class="about__subtitle">Education</h2>
+                        
+                        <!--========== EDUCATION =========-->
+                        <div class="education__timeline">
+                            <div class="education__container right">
+                            <div class="education__date">2019-23</div>
+                            <i class="icon fa fa-circle-o"></i>
+                            <div class="education__content">
+                                <h2>Indian Institute of Technology Kanpur</h2>
+                                <div style="color: black !important;">
+                                    <div style="font-size: 10px;">
+                                        Major: Mechanical Engg.<br>
+                                        Minors: Control Systems in Electrical Engg.,<br>
+                                                Industrial and Management Engg.
+                                    </div>
+                                    B.Tech. <br>
+                                    Grade: 8.43/10
                                 </div>
-                                B.Tech. <br>
-                                Grade: 8.43/10
                             </div>
-                          </div>
+                            </div>
+                            <div class="education__container left">
+                            <div class="education__date">2017-19</div>
+                            <i class="icon fa fa-circle"></i>
+                            <div class="education__content">
+                                <h2>FIITJEE Junior College, Vizag, AP</h2>
+                                <p>
+                                    BIEAP (XII) <br>
+                                    Grade: 9.75/10
+                                </p>
+                            </div>
+                            </div>
+                            <div class="education__container right">
+                            <div class="education__date">2007-17</div>
+                            <i class="icon fa fa-circle"></i>
+                            <div class="education__content">
+                                <h2>The Sun School, Vizianagaram, AP</h2>
+                                <p>
+                                    BSEAP (X) <br>
+                                    Grade: 10/10
+                                </p>
+                            </div>
+                            </div>
                         </div>
-                        <div class="education__container left">
-                          <div class="education__date">2017-19</div>
-                          <i class="icon fa fa-circle"></i>
-                          <div class="education__content">
-                            <h2>FIITJEE Junior College, Vizag, AP</h2>
-                            <p>
-                                BIEAP (XII) <br>
-                                Grade: 9.75/10
-                            </p>
-                          </div>
-                        </div>
-                        <div class="education__container right">
-                          <div class="education__date">2007-17</div>
-                          <i class="icon fa fa-circle"></i>
-                          <div class="education__content">
-                            <h2>The Sun School, Vizianagaram, AP</h2>
-                            <p>
-                                BSEAP (X) <br>
-                                Grade: 10/10
-                            </p>
-                          </div>
-                        </div>
-                      </div>
 
-                </div>
-            </section>
-
-            <!--===== SKILLS =====-->
-            <section class="skills section" id="skills">
-                <h2 class="section-title">Skills</h2>
-
-                <div class="skills__container bd-grid">          
-                        <h2 class="skills__subtitle">Programming Languages</h2>
-                        <p class="skills__text icons">
-                            <img class="icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/C_Programming_Language.svg/1200px-C_Programming_Language.svg.png" title="C">
-                            <img class="icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1822px-ISO_C%2B%2B_Logo.svg.png" title="C++">
-                            <img class="icon" src="https://miro.medium.com/max/1400/1*PIpjPTlcrDyXLl2fDv34bA.png" title="Python">
-                            <img class="icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/800px-JavaScript-logo.png" title="JavaScript">
-                            <img class="icon" src="data:image/jpeg;base64,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" title="MATLAB/Octave">
-                            <img class="icon" src="https://external-preview.redd.it/kvY4inBELzFzJu4BTDtrAJwXrAM-nfKvdmlN0Mm7Y44.png?width=640&crop=smart&auto=webp&s=a43a59ee7b9030520b4392d9dd17e33bad3172d5" title="Solidity">
-                            <!-- C/C++, Python, JavaScript, MATLAB/Octave, SQL, Solidity -->
-                        </p>
-                        <h2 class="skills__subtitle">Web Development</h2>
-                        <p class="skills__text icons">  
-                            <img class="icon" src="data:image/png;base64,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" title="HTML5">
-                            <img class="icon" src="data:image/png;base64,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" title="CSS3">
-                            <img class="icon" src="https://static.javatpoint.com/tutorial/bootstrap4/images/bootstrap-4.png" title="Bootstrap4">
-                            <img class="icon" src="https://miro.medium.com/max/1200/1*j-27ksc56w9EEcBlyB7QIg.png" title="JSX">
-                            <img class="icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/512px-Typescript_logo_2020.svg.png" title="TypeScript">
-                            <img class="icon" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTnOERRdJZSEYeeGJ1s0ReOwaWV0iC2Ra1faqhFZyp12KiFbIYG6REl3a7bQWy8CObCvc&usqp=CAU" title="jQuery">
-                            <img class="icon" src="https://www.vectorlogo.zone/logos/nodejs/nodejs-ar21.png" title="NodeJS">
-                            <img class="icon" src="https://www.geekandjob.com/uploads/wiki/2e5b0058b2d38158b21439fe06e9b8fabe3cb139.png" title="ExpressJS">
-                            <img class="icon" src="https://www.datocms-assets.com/45470/1631110818-logo-react-js.png" title="ReactJS">
-                            <img class="icon" src="https://idroot.us/wp-content/uploads/2020/10/sqlite-logo.png" title="SQL">
-                            <!-- HTML5, CSS3, JSX, TypeScript, Bootstrap4, jQuery, NodeJS, ExpressJS, ReactJS -->
-                        </p>
-                        <h2 class="skills__subtitle">Other Tools and Utilities</h2>
-                        <p class="skills__text icons">  
-                            <img class="icon" src="https://e7.pngegg.com/pngimages/713/558/png-clipart-computer-icons-pro-git-github-logo-text-logo-thumbnail.png" title="Git">
-                            <img class="icon" src="https://bloximages.newyork1.vip.townnews.com/redandblack.com/content/tncms/assets/v3/editorial/4/59/45940eb2-5403-11e9-a843-db0e4491cc90/5ca13d8453042.image.jpg?resize=960%2C640" title="Linux Shell Utilities">
-                            <img class="icon" src="https://i.stack.imgur.com/AarYf.png" title="Latex">
-                            <img class="icon" src="https://www.kent.ac.uk/productivity-tools/images/ilog.png" title="IBM CPLEX">
-                            <img class="icon" src="https://www.1min30.com/wp-content/uploads/2018/10/Logo-SolidWorks.jpg" title="Solidworks">
-                            <img class="icon" src="https://images.ansys.com/is/image/ansys/2021-09-ansys-og?wid=1200" title="Ansys">
-                            <!-- Latex, Git, Linux Shell Utilities, REST APIs, IBM CPLEX, Solidworks, Ansys -->
-                        </p>
-                        <!-- <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-javascript skills__icon' ></i>
-                                <span class="skills__name">JAVASCRIPT</span>
-                            </div>
-                            <div class="skills__bar skills__js">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">65%</span>
-                            </div>
-                        </div> -->
                     </div>
-                    
-                    <!-- <div>              
-                        <img src="assets/img/work3.jpg" alt="" class="skills__img">
-                    </div> -->
-                </div>
-            </section>
+                </section>
 
-            <!--===== WORK =====-->
-            
-            <section class="work section" id="work">
-                <h2 class="section-title">Projects</h2>
+                <!--===== SKILLS =====-->
+                <section class="skills section" id="skills">
+                    <h2 class="section-title">Skills</h2>
 
-                <div class="work__container bd-grid">
-                    <a href="javascript: void(0)" id="myBtn1" class="work__img">
-                        <img src="assets/img/typing_test.gif" class="work__imgg" alt="">
-                        <div class="overlay">Speed Typing Test Web App</div>
-                    </a>
-                    <!-- The Modal -->
-                    <div id="myModal1" class="modal">
-                        <!-- Modal content -->
-                        <div class="modal-content">
-                            <span class="close" id="close1">&times;</span>
-                            <h2>Speed Typing Test Web Application</h2>
-                            <div class="m-3">
-                                <a style="text-decoration: none;" href="https://nikheshd.github.io/TypingTest/" target="_blank"><i style="width: 16px;" data-feather="external-link"></i> <span class="links">
-                                    TypingTest</span></a>
-                                <a class="pl-5  " style="text-decoration: none;" href="https://github.com/nikheshd/TypingTest" target="_blank"><i style="width: 16px;" data-feather="github"></i><span class="links">
-                                    nikheshd/TypingTest</span></a>
-                            </div>
-                            <p>
-                                A web application to test your typing speed and get results.<br><br>
-                                <span style="font-weight: bold;">Skills:</span> HTML, CSS, JavaScript<br>
-                                <span style="font-weight: bold;">More:</span> Developing layouts, website integration, Bootstrap, Grid System, Nav Bar, CSS Selectors & Inheritance, CSS Specifity & Cascade, Sections, Modals DOM, Event Fundamentals, storage mechanisms, JSON, JSON methods, Fetch and Callbacks, Event Listeners, Hypertext Transfer Protocol (HTTP), HTTP Requests using JS, spinner, forms.
-                                <br><br>
-                                <span style="font-weight: bold;">Functionalities</span> <br>
-                                <ol style="text-align: left;">
-                                    <li>When the text in the HTML paragraph element with id quoteDisplay and the value entered in HTML textarea element with id quoteInput are not the same, and the HTML button element with id submitBtn is clicked an error message should be shown in the HTML paragraph element with id result </li>
-                                    <li>When the text in the HTML paragraph element with id quoteDisplay and the value entered in HTML textarea element with id quoteInput are not the same, and the HTML button element with id submitBtn is clicked the timer should be running</li>
-                                    <li>When the text in HTML paragraph element with id quoteDisplay is entered in HTML textarea element, and the HTML button element with id submitBtn is clicked a success message should be shown in HTML paragraph element with id result</li>
-                                    <li>The HTML paragraph element with id timer should always have numbers greater than or equals to 0</li>
-                                    <li>When the text in HTML paragraph element with id quoteDisplay is entered in HTML textarea element, and the HTML button element with id submitBtn is clicked the timer should stop</li>
-                                    <li>When the reset button is clicked, an HTTP request should be made to get a random quotation from the given URL and the value in the HTML paragraph element with id quoteDisplay should be replaced with quotation received in the response</li>
-                                    <li>When page is opened, an HTTP request should be made to get a random quotation from the given URL and the HTML paragraph element with id quoteDisplay should have the quotation received in the response.</li>
-                                </ol>
-                                <br>and more...
+                    <div class="skills__container bd-grid">          
+                            <h2 class="skills__subtitle">Programming Languages</h2>
+                            <p class="skills__text icons">
+                                <img class="icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/C_Programming_Language.svg/1200px-C_Programming_Language.svg.png" title="C">
+                                <img class="icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1822px-ISO_C%2B%2B_Logo.svg.png" title="C++">
+                                <img class="icon" src="https://miro.medium.com/max/1400/1*PIpjPTlcrDyXLl2fDv34bA.png" title="Python">
+                                <img class="icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/800px-JavaScript-logo.png" title="JavaScript">
+                                <img class="icon" src="data:image/jpeg;base64,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" title="MATLAB/Octave">
+                                <img class="icon" src="https://external-preview.redd.it/kvY4inBELzFzJu4BTDtrAJwXrAM-nfKvdmlN0Mm7Y44.png?width=640&crop=smart&auto=webp&s=a43a59ee7b9030520b4392d9dd17e33bad3172d5" title="Solidity">
+                                <!-- C/C++, Python, JavaScript, MATLAB/Octave, SQL, Solidity -->
                             </p>
-                        </div>
-                    </div>
-<!--------------------------------------------------------------------------------------------------->
-                    <a href="javascript: void(0)" id="myBtn2" class="work__img">
-                        <img src="assets/img/todos.gif" class="work__imgg" alt="">
-                        <div class="overlay">Todos Web App</div>
-                    </a>
-                    <!-- The Modal -->
-                    <div id="myModal2" class="modal">
-                        <!-- Modal content -->
-                        <div class="modal-content">
-                            <span class="close" id="close2">&times;</span>
-                            <h2>Todos Web Application</h2>
-                            <div class="m-3">
-                                <a style="text-decoration: none;" href="https://nikheshd.github.io/TodoApp/" target="_blank"><i style="width: 16px;" data-feather="external-link"></i> <span class="links">
-                                    TodoApp</span></a>
-                                <a class="pl-5" style="text-decoration: none;" href="https://github.com/nikheshd/TodoApp" target="_blank"><i style="width: 16px;" data-feather="github"></i><span class="links">
-                                    nikheshd/TodoApp</span></a>
-                            </div>
-                            <p>A web application to create, update, save or delete todo tasks.<br><br>
-                                <span style="font-weight: bold;">Skills:</span> HTML, CSS, JavaScript <br>
-                                <span style="font-weight: bold;">More:</span> Developing layouts, website integration, Bootstrap, Grid System, Nav Bar, CSS Selectors & Inheritance, CSS Specifity & Cascade, Sections, Modals DOM, Event Fundamentals, storage mechanisms, JSON, JSON methods, Fetch and Callbacks, Event Listeners, Hypertext Transfer Protocol (HTTP), HTTP Requests using JS, spinner, forms.
-                                <br>
+                            <h2 class="skills__subtitle">Web Development</h2>
+                            <p class="skills__text icons">  
+                                <img class="icon" src="data:image/png;base64,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" title="HTML5">
+                                <img class="icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAyVBMVEX///8fcrXr6+tRo9zOzs4AAAAYcLRJhb77+/tSpd3d3d0Aa7M7jMlBntuWlpYdHR24wMrV3+iBgYHj5+rU0s8Aa7KcnJy2trby7+wAZrCktMYzMzP09PRTU1Myg8JMnthEldHt8/mux+DB1OeBp8+VtNXe6fN3ocxslL52m8HDyc5srt6Ku+Euf78wgcHu9PlcksWlwNy4zOJiqt2HpMN8teBCgbrI2eefscaZwuJLS0uPj4+rq6tvb2/H0Nl4m8CQqsUsl9qMsNRjiYPPAAAMJUlEQVR4nO2de1/ayhaGg9hBDLSwITahu1JBK16oiArSfc7R7ff/UCchTpKBtZLMZK2A/eXtn03Rp3N7sy6DZRXUX59S9N1/4CTtgU8nlvU19YG/iv6ChVURVoQVYUW4Y8LfmYSfPxDhP5+39Z8E4e8T4IF/DmPCb+ADX3cNGBMeIQ+cZA2GJPzO9BsWVUT4N/JARfjnEP737wNAVkz4G3tgx8pNCOqLlbWXlskCqxjhN6siLJMFVkVoff7jCQ8/n2zrS4LwGHrg2wciBPUtQQjqe0VYnipCWB+SUOtffUjCL4A+fbUO4L9IEKY+sE+EoALCNK0JU7VrvoqwIqwIPz5h8Aa874RHqSJ5oFKlSpUqVapUqVKlSn+AzqaNfdb0rDDhkSf2WR7B61VN1PZXolYc0FrsNeGCgHC214QzAsLJXhNOCAjPnV1jpMg5JyC832vCewLCkb1rjBTZIwLC8V4TjgkIu96uMVLkdQkIf+414U8CwjviWVrUpykfZt8REFq0e+m0VVCnCiEFoEUKKFrNgvqhjCIJYYPS1PiE9UJqthK/jmiQEJLatuKEp0lCCtNGbNsICBOfRmLaLOtivwinScILEsLRfhEm38hJTBuxbStMWE9+Golps6wlpamhJfSWJISktq0w4TC5s5OYNt+27TEhiWmzjgThgViYMGlphCAq1Zjiv/BuCWtTGkBS21aUkMO00cYTaQkpYomBLgmP/MKEimm7JCKktG2FCRlMG208sTBh8sNIYomB5jChsE102jYRQjgnIoRtm2hcdwz0v66JbiLE5K9AZNow2yYa/UMDHUONollyI0IO04bZNlEzATQjPHiACYsngN8FG1O7PEI32p4US+NRAVoOeOTb1+WNYR0iFA4Z4RQkdDomC9GMUG6mqqWhsqWYbbMHpY1hDyakMm2+bYPH8LU0wm5EmDRtgsq0WdYbeOQ7L6XN0phQMW1vZISwbROT0giXMCGVacNsm5iVRehGhIqlITNtvm0D44liWhrhGCQkiiUGQmxbrTTC0VASspg2yzqDTY0wOfILETY5Im2B7hBT0ymLcCXHULU0dIRI9d6OCYnSo6EQ2/ZcFuGtnKWKpaGo2pOC44nOq8FWY0T4BBLSmTbUtj32tWVGKF+A1QQwnWnDbNt6dU4DLRaLdU3ybK2Jqqurq5eXl8dQz0aE8gWYy7Th8cScJTBOKNtrDMzGsAkSUsUSAxFU7wlHTDqmszQiTH6iQ5MADlU4DSyc2uNh32incd3uExhLtKkibYEKVu8Je/Hc7xvtpa47vmlHnm2Y/FRC01YsDSwce5aId2gRugejZhwN3jRtZJE2K2i6MOervVz3zc5Dt7saDutJqZE20k52w3Uo7OnroWoL8hK67vKprfJtENJU7UkZpYGF3Rj0N21PPkJ/+T1s8dXrLY4EcCj9NLB/CE6gcGMeQrenLL94HbIkgEPpVu8Fp8M16FqzCd3uLTB826aNpmpPSq96L3k66BJCyy8i/JX4IURVe1IaaWDheLOUaHgqoXswh5ZfRMhm2jRsm2/Orq6x8csgdHurNrT8YkKGqj2pnLYNOB3yErr48osJlcOCLtIWKFf1Hng65CNUzRkqhZCi1SJWtm3DToc8hBvmDB1CngRwqLuMnUbY2OmQTRiYsxx89Y0EMGWkzcqq3guWX+b0hAlBc4aJpWpPKo3Pm2UvP5gw5/KTanHFEgNhti14dc83PbcJMXOGidO0odV7Qr666xP6p8Mw//CtCU+5YomBENvm5Z+eG4Tjm391C6I4TRtq2zztmLAk7PZyiz/SFgip3tOvqTGItcWRtsQsJUwAh5rDtk0/OaNP2ItWq/KTaU0batts7ZoaA8JoISqWhjKWGAixbfaAnzAqxOA0bWjThX6CTZ9wCRPSmjYLq95zHtnHMC5TYKrakwIBDaqG9Ann7AngUEiStATCezA9Sm3aMNumXxelTyiT+LymDUsD69dF6RNGSXymqj0pOA0sFvyEURKfLQEcCqneK4EwSuKzmja0em+qCWhACCeA6ar2pBDbJvgJo8pLVtOG2zbd2jZ9T1OOabOsM+Tlgp2wBxLalAngUEfIC6Lu65M2YRc0bQ7DVeZwPFH75eIYf5eHCZcQoRD0gEj1Xk2zdc37hYZj/u1CgJHx5mq1iEXTK5vSf9iGCefsVXtSsG2jJASnaVwfzGza0Oo9OsIhTLgqybRRdQPrE96ChPSmDe2VpSOsg1tpZLy5Wi1iwU0XlIQuSBi1jyY/hrRqT4rm7r0UwiZMGLWPMps2tOmCmzCKePNV7UmZV+/lJHwACXvyrxmr9qRIrkxOIbyBCUHTRh9pC4TYtpoDmDP0PyOF8Akk7JZm2tA0sPM82BZq8XDCIUy4BAk5TBtavWcDSe4+WumXQngLEcbGm7FqTwpJA0PvT/0XzB5oE84loWJpqBPAoRDbBiVn+q8GhCtwlo5KM21o9R7Y0v1MRRgb7+SnEFftSSHVe2D6yYRwBBJGxpuxak+qCxNCqYv+ADOxaYTQJI2NN2PVnhQSTwSTMx19wvYcHMN3481atSeFXJkM3lNzbUA4Bgml8VYbEcgTwKGwFj0o2kZGWIcI6S41UQUbUyEgQv0Tv70E16G0paxVe1KIbQOb1jETq0vYA00bfQI4FGI2obB3H/tmkxRCMJjYLdG04batFELWqj0pxLaBxhStR4UJh+3mClyGS9CWUlftSSFXJkNN6+jLBUA4bLdvVl0XjtJExpux1SKWhm3rv9i2A+VyNgmH7eHTvAfjBRpBsUQm04amgZ0r4LjoX3ceJ4s1psKpEPpz83Z8gOMl74tgTgCHwmwbXHGyvl+g83zVqCWHMyYcth9WSzcNL0FYimlDq/fSrxf0OTuDx9nUC4czJAyW3ghZeiqhfLVgrtp7F9J0kaPiJBjOwetkUbOdlo9XT116CqGMeLO2WsSCe2VzXqAYztrXt5vbZerSUwml8Wbsj00KOeS8XITvOs5aeqreV205pg23bTr1GJqVCnXItPHEEgMhVyZr1WNoEoKmjSMBHAq1bWyEvVJNG9p0oVXsrUfYhUwbUywxEJIG1ir21iOMjLcyZzgSwKGw6j2dQmG9mz+iKvbkz2MzbXrRNhrCUammDb97T+dWaCPCkkybhTVd+KbGsIc0Dc51u6MnsBGBvtUiFhIjFGJx9Zx6z4AeoU/XG98223EHJtMFydvCImg+o+1NJ3koMwl9uuXqoa20B6um7ZSRMLV6L7i1rLamTMNMJ3QPuqOb4Vbzc1mmLUf1nk9p1yavHZwSJQwXXhNs7VZMG0vVnlSu6r015ey1A28/IOH2wtsgZK/ak8r9TRch5WOnvzWYwJ0K7sHWwtskTH42o2nTrN4LKJ3Z4+BQoTzepPMXXirdWgohn2kzuXvPpxSNJOVxgs7tzW/hhbc5hqVE2gKZ3UznU3qLl0F4lBxHZ8J4hS+8DZVl2opU7wX3X65twbG7vu5jlWNqYoSMpi3zEpcsSt8WnM/9M0GHLhDbBcnbKly9J1rtvFMTIWRLj4ZCbVt+QoNvQyqjak+q8FewERBymjaCpgszQvZWi1iFmy4MCJv1YWmmjaDpQpOw2az/OFW3N1bTRnBlcn7Cpv/nR2u6lQ1iSwCHKn5lck7CZnPYmtagZBdbAjgUUr1HS/g+NZFNzeOp2pMq/M25mYTrwRMCvx+OpdUiVuGmi1RCn+7HL3TwJCFbejQU1ywN95UsukCckbZARb85FybE95Vt8Zq24rZtmzB9X9n+AL4EcKiZB3/njCFh5r6y8a+F43FV7UXqXjSC+hgCwmBf0Ri84IJiZ3bPu5O+6258LkyH8p2wmXdfSeBN35bM26iin/cz24QyIJRTU4OudjlnfbOHdbR8m3q25hevi5bWvrLujGvcc8aeMnQ2mjiaQ6m3r0zPxzsYvA0tL4IaRB3IXHiOJ2a7HDxVd/PLqQfWk5rRlb+v5JG/94gCx0iMt6t9JY/We0+RoQwiqo0L3tejwjobXdaMDst1GvltXwdvQ77v8fT2nrVfGZXiV6jk+568EzYYvMYFZ0KJTf7ek3lY7vW+kkf+3rNAh9Kn8/boyDPX2Rzae4J95Xy8b0eeudS9xx88ezb6AwZP1dH73iNse/Ex95U8+jm6LN1K/x/iyfsn+LJOMQAAAABJRU5ErkJggg==" title="CSS3">
+                                <img class="icon" src="https://static.javatpoint.com/tutorial/bootstrap4/images/bootstrap-4.png" title="Bootstrap4">
+                                <img class="icon" src="https://miro.medium.com/max/1200/1*j-27ksc56w9EEcBlyB7QIg.png" title="JSX">
+                                <img class="icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/512px-Typescript_logo_2020.svg.png" title="TypeScript">
+                                <img class="icon" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTnOERRdJZSEYeeGJ1s0ReOwaWV0iC2Ra1faqhFZyp12KiFbIYG6REl3a7bQWy8CObCvc&usqp=CAU" title="jQuery">
+                                <img class="icon" src="https://www.vectorlogo.zone/logos/nodejs/nodejs-ar21.png" title="NodeJS">
+                                <img class="icon" src="https://www.geekandjob.com/uploads/wiki/2e5b0058b2d38158b21439fe06e9b8fabe3cb139.png" title="ExpressJS">
+                                <img class="icon" src="https://www.datocms-assets.com/45470/1631110818-logo-react-js.png" title="ReactJS">
+                                <img class="icon" src="https://idroot.us/wp-content/uploads/2020/10/sqlite-logo.png" title="SQL">
+                                <!-- HTML5, CSS3, JSX, TypeScript, Bootstrap4, jQuery, NodeJS, ExpressJS, ReactJS -->
                             </p>
-                        </div>
-                    </div>
-<!--------------------------------------------------------------------------------------------------->
-                    <a href="javascript: void(0)" id="myBtn3" class="work__img">
-                        <img src="assets/img/f1.gif" class="work__imgg" alt="">
-                        <div class="overlay">IITK Motorsports</div>
-                    </a>
-                    <!-- The Modal -->
-                    <div id="myModal3" class="modal">
-                        <!-- Modal content -->
-                        <div class="modal-content">
-                            <span class="close" id="close3">&times;</span>
-                            <h2>Formula Student Electric | IITK Motorsports</h2>
-                            <div class="m-3">
-                                <a style="text-decoration: none;" href="https://www.iitk.ac.in/ame/sae/" target="_blank"><i style="width: 16px;" data-feather="external-link"></i> <span class="links">
-                                    SAE IIT Kanpur</span></a>
-                                <a class="pl-5" style="text-decoration: none;" href="https://www.facebook.com/SAE.IITK" target="_blank"><i style="width: 16px;" data-feather="facebook"></i> <span class="links">
-                                    SAE.IITK</span></a>
-                                <a class="pl-5" style="text-decoration: none;" href="https://www.instagram.com/iitkms/" target="_blank"><i style="width: 16px;" data-feather="instagram"></i> <span class="links">
-                                    iitkms</span></a>
-                            </div>
-                            <p>
-                                <img style="margin: 5% auto" src="assets/img/iitkms.jpg">
+                            <h2 class="skills__subtitle">Other Tools and Utilities</h2>
+                            <p class="skills__text icons">  
+                                <img class="icon" src="https://e7.pngegg.com/pngimages/713/558/png-clipart-computer-icons-pro-git-github-logo-text-logo-thumbnail.png" title="Git">
+                                <img class="icon" src="https://bloximages.newyork1.vip.townnews.com/redandblack.com/content/tncms/assets/v3/editorial/4/59/45940eb2-5403-11e9-a843-db0e4491cc90/5ca13d8453042.image.jpg?resize=960%2C640" title="Linux Shell Utilities">
+                                <img class="icon" src="https://i.stack.imgur.com/AarYf.png" title="Latex">
+                                <img class="icon" src="https://www.kent.ac.uk/productivity-tools/images/ilog.png" title="IBM CPLEX">
+                                <img class="icon" src="https://www.1min30.com/wp-content/uploads/2018/10/Logo-SolidWorks.jpg" title="Solidworks">
+                                <img class="icon" src="https://images.ansys.com/is/image/ansys/2021-09-ansys-og?wid=1200" title="Ansys">
+                                <!-- Latex, Git, Linux Shell Utilities, REST APIs, IBM CPLEX, Solidworks, Ansys -->
+                            </p>
+                            <!-- <div class="skills__data">
+                                <div class="skills__names">
+                                    <i class='bx bxl-javascript skills__icon' ></i>
+                                    <span class="skills__name">JAVASCRIPT</span>
+                                </div>
+                                <div class="skills__bar skills__js">
+                                    
+                                </div>
                                 <div>
-                                    <p style="font-weight: bold;">Achievements</p>
-                                    <ol style="text-align: left;">
-                                        <li>Secured 1st position in Formula Bharat 2023 (FB2023) competing against National and International teams</li>
-                                        <li>Secured 18th position in Formula Bharat 2021 (FB2021) competing against National and International teams</li>
-                                    </ol>
+                                    <span class="skills__percentage">65%</span>
                                 </div>
-                                <div class="mt-4">
-                                    <p><span style="font-weight: bold;">Position of Responsibility</span> <br> Senior Team Member and Vehicle Dynamics Lead - IITK Motorsports (April’21 - April’22 )</p>
-                                    <ol style="text-align: left;">
-                                        <li>Designed and developed tools and solutions used across subsystems using MATLAB, Simulink, Python and MS Excel. </li>
-                                        <li>Mentored junior team members in vehicle dynamics, mainly wheel assembly, suspension system, steering system and brakes.</li>
-                                        <li>Prepared the team for Formula Bharat 2021, 2022 and coordinated with team leads to improve the overall performance.</li>
-                                    </ol>
-                                </div>
-                                <div class="mt-4">
-                                    <p><span style="font-weight: bold;">Project Details</span> <br> Formula Student Electric | IITK Motorsports (Sept’19 - April’22) <br> Faculty Advisors: Dr. Santanu De, Dept of Mechanical Engg. and Prof. Ramprasad Potluri, Dept of Electrical Engg.</p>
-                                    <ol style="text-align: left;">
-                                        <li>Assisted in the overall designing of an FS Electric Vehicle with a team of 30+ students and participated in FB2021.</li>
-                                        <li>Calculated forces at suspension points in MATLAB using Wheel Loads that are calculated based on load transfers.</li>
-                                        <li>Designed and analyzed wheel assembly in Solidworks, Ansys respectively, with design targets and under extreme conditions.</li>
-                                    </ol>
-                                </div>
-                            </p>
-                        </div>
+                            </div> -->
                     </div>
-<!--------------------------------------------------------------------------------------------------->
-                    <a href="javascript: void(0)" id="myBtn4" class="work__img">
-                        <img src="assets/img/blockchain.gif" class="work__imgg" alt="">
-                        <div class="overlay">Game of Blocks</div>
-                    </a>
-                    <!-- The Modal -->
-                    <div id="myModal4" class="modal">
-                        <!-- Modal content -->
-                        <div class="modal-content">
-                            <span class="close" id="close4">&times;</span>
-                            <h2>Game of Blocks</h2>
-                            <div class="m-3">
-                                <a style="text-decoration: none;" href="https://github.com/nikheshd/GameOfBlocks_PClub" target="_blank"><i style="width: 16px;" data-feather="github"></i>1 <span class="links">
-                                    GameOfBlocks_PClub</span></a>
-                                <a class="pl-5" style="text-decoration: none;" href="https://github.com/nikheshd/smart-contract-hub/tree/main" target="_blank"><i style="width: 16px;" data-feather="github"></i>2 <span class="links">
-                                    smart-contract-hub</span></a>
-                            </div>
-                            <p>Programming Club, Science and Technology Council, Indian Institute of Technology Kanpur (May’21 - July’21 ) </p>
-                            <div>
-                                <p class="mt-4" style="font-weight: bold;">Overview</p>
-                                <p>This project aims to introduce the concept of blockchains and smart contract development,
-                                    which have recently become quite prevelant and relevant, with a flavor of Game Theory.</p>
-                            </div>
-                            <div>
-                                <p class="mt-4" style="font-weight: bold;">Skills</p>
-                                <p>BlockChain, Game Theory, Solidity</p>
-                            </div>
-                            <div>
-                                <p class="mt-4" style="font-weight: bold;">Goals Achieved</p>
-                                <ol style="text-align: left;">
-                                    <li>Understanding basic mechanism of Blockchains and cryptocurrencies.</li>
-                                    <li>Implementing a simple mining algorithm, in the form of an Assignment.</li>
-                                    <li>Learning about various consensus mechanisms prevalent in Blockchain systems.</li>
-                                    <li>Understanding Ethereum Smart Contracts and their usage.</li>
-                                    <li>Learning the programming language Solidity.</li>
-                                    <li>Implementing a Smart contract for transfer of a self created token called MetaCoin to
-                                        settle loans, in the form of an Assignment.</li>
-                                    <li>Learning the basics of Game Theory and Mechanism Design, and the different types of
-                                        mechanisms for various tasks.</li>
-                                    <li>Understanding the importance of designing fool proof mechanisms for day-to-day games.</li>
-                                    <li>Realizing the need for decentralization in everyday games (tasks) such as auctions,
-                                        voting and asset transfer.</li>
-                                    <li>Implementing several different methods to perform these tasks in a decentralized fashion, using Smart Contracts on the Ethereum Blockchain.</li>
-                                </ol>
+                        
+                </section>
+
+                <!--===== WORK =====-->
+                
+                <section class="work section" id="work">
+                    <h2 class="section-title">Projects</h2>
+
+                    <div class="work__container bd-grid">
+                        <a href="javascript: void(0)" id="myBtn1" class="work__img">
+                            <img src="assets/img/typing_test.gif" class="work__imgg" alt="">
+                            <div class="overlay">Speed Typing Test Web App</div>
+                        </a>
+                        <!-- The Modal -->
+                        <div id="myModal1" class="modal">
+                            <!-- Modal content -->
+                            <div class="modal-content">
+                                <span class="close" id="close1">&times;</span>
+                                <h2>Speed Typing Test Web Application</h2>
+                                <div class="m-3">
+                                    <a style="text-decoration: none;" href="https://nikheshd.github.io/TypingTest/" target="_blank"><i style="width: 16px;" data-feather="external-link"></i> <span class="links">
+                                        TypingTest</span></a>
+                                    <a class="pl-5  " style="text-decoration: none;" href="https://github.com/nikheshd/TypingTest" target="_blank"><i style="width: 16px;" data-feather="github"></i><span class="links">
+                                        nikheshd/TypingTest</span></a>
+                                </div>
+                                <p>
+                                    A web application to test your typing speed and get results.<br><br>
+                                    <span style="font-weight: bold;">Skills:</span> HTML, CSS, JavaScript<br>
+                                    <span style="font-weight: bold;">More:</span> Developing layouts, website integration, Bootstrap, Grid System, Nav Bar, CSS Selectors & Inheritance, CSS Specifity & Cascade, Sections, Modals DOM, Event Fundamentals, storage mechanisms, JSON, JSON methods, Fetch and Callbacks, Event Listeners, Hypertext Transfer Protocol (HTTP), HTTP Requests using JS, spinner, forms.
+                                    <br><br>
+                                    <span style="font-weight: bold;">Functionalities</span> <br>
+                                    <ol style="text-align: left;">
+                                        <li>When the text in the HTML paragraph element with id quoteDisplay and the value entered in HTML textarea element with id quoteInput are not the same, and the HTML button element with id submitBtn is clicked an error message should be shown in the HTML paragraph element with id result </li>
+                                        <li>When the text in the HTML paragraph element with id quoteDisplay and the value entered in HTML textarea element with id quoteInput are not the same, and the HTML button element with id submitBtn is clicked the timer should be running</li>
+                                        <li>When the text in HTML paragraph element with id quoteDisplay is entered in HTML textarea element, and the HTML button element with id submitBtn is clicked a success message should be shown in HTML paragraph element with id result</li>
+                                        <li>The HTML paragraph element with id timer should always have numbers greater than or equals to 0</li>
+                                        <li>When the text in HTML paragraph element with id quoteDisplay is entered in HTML textarea element, and the HTML button element with id submitBtn is clicked the timer should stop</li>
+                                        <li>When the reset button is clicked, an HTTP request should be made to get a random quotation from the given URL and the value in the HTML paragraph element with id quoteDisplay should be replaced with quotation received in the response</li>
+                                        <li>When page is opened, an HTTP request should be made to get a random quotation from the given URL and the HTML paragraph element with id quoteDisplay should have the quotation received in the response.</li>
+                                    </ol>
+                                    <br>and more...
+                                </p>
                             </div>
                         </div>
-                    </div>
-                    
-<!--------------------------------------------------------------------------------------------------->
-                    <a href="javascript: void(0)" id="myBtn5" class="work__img">
-                        <img src="assets/img/DrReddys.jpg" class="work__imgg" alt="">
-                        <div class="overlay">PAT Implementation in Nanoemulsions</div>
-                    </a>
-                    <!-- The Modal -->
-                    <div id="myModal5" class="modal">
-                        <!-- Modal content -->
-                        <div class="modal-content">
-                            <span class="close" id="close5">&times;</span>
-                            <h2>Summer Internship, Dr.Reddy's Laboratories</h2>
-                            <p>Hyderabad (May’22 - July’22 )</p>
-                            <div class="m-3">
-                                <a style="text-decoration: none;" href="https://drive.google.com/drive/folders/1FpflA_mZNWKgvC1bTSD0p8DSWB7sfEXb" target="_blank"><span style="size: 16px;" class="material-icons-outlined">folder_open</span><span class="links">
-                                    Drive</span></a>
-                                <a class="pl-5" style="text-decoration: none;" href="https://docs.google.com/presentation/d/e/2PACX-1vQiLVBSQrQ2DoCL7xrFmUvTqMYV6_c-w-dmI8bHz5NAKJwO_5LyHsPa-9oAnqWumg/pub?start=false&loop=false&delayms=3000" target="_blank"><span style="size: 16px;" class="material-icons-outlined">slideshow</span><span class="links">
-                                    PPT</span></a>
+                        <!-- --------------------------------------------------------------------------------------->
+                        <a href="javascript: void(0)" id="myBtn2" class="work__img">
+                            <img src="assets/img/todos.gif" class="work__imgg" alt="">
+                            <div class="overlay">Todos Web App</div>
+                        </a>
+                        <!-- The Modal -->
+                        <div id="myModal2" class="modal">
+                            <!-- Modal content -->
+                            <div class="modal-content">
+                                <span class="close" id="close2">&times;</span>
+                                <h2>Todos Web Application</h2>
+                                <div class="m-3">
+                                    <a style="text-decoration: none;" href="https://nikheshd.github.io/TodoApp/" target="_blank"><i style="width: 16px;" data-feather="external-link"></i> <span class="links">
+                                        TodoApp</span></a>
+                                    <a class="pl-5" style="text-decoration: none;" href="https://github.com/nikheshd/TodoApp" target="_blank"><i style="width: 16px;" data-feather="github"></i><span class="links">
+                                        nikheshd/TodoApp</span></a>
+                                </div>
+                                <p>A web application to create, update, save or delete todo tasks.<br><br>
+                                    <span style="font-weight: bold;">Skills:</span> HTML, CSS, JavaScript <br>
+                                    <span style="font-weight: bold;">More:</span> Developing layouts, website integration, Bootstrap, Grid System, Nav Bar, CSS Selectors & Inheritance, CSS Specifity & Cascade, Sections, Modals DOM, Event Fundamentals, storage mechanisms, JSON, JSON methods, Fetch and Callbacks, Event Listeners, Hypertext Transfer Protocol (HTTP), HTTP Requests using JS, spinner, forms.
+                                    <br>
+                                </p>
                             </div>
-                            <div style="text-align: center;">
-                                <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQiLVBSQrQ2DoCL7xrFmUvTqMYV6_c-w-dmI8bHz5NAKJwO_5LyHsPa-9oAnqWumg/embed?start=false&loop=true&delayms=3000" frameborder="0" width="70%" height="500"></iframe>
+                        </div>
+                        <!--------------------------------------------------------------------------------------------------->
+                        <a href="javascript: void(0)" id="myBtn3" class="work__img">
+                            <img src="assets/img/f1.gif" class="work__imgg" alt="">
+                            <div class="overlay">IITK Motorsports</div>
+                        </a>
+                        <!-- The Modal -->
+                        <div id="myModal3" class="modal">
+                            <!-- Modal content -->
+                            <div class="modal-content">
+                                <span class="close" id="close3">&times;</span>
+                                <h2>Formula Student Electric | IITK Motorsports</h2>
+                                <div class="m-3">
+                                    <a style="text-decoration: none;" href="https://www.iitk.ac.in/ame/sae/" target="_blank"><i style="width: 16px;" data-feather="external-link"></i> <span class="links">
+                                        SAE IIT Kanpur</span></a>
+                                    <a class="pl-5" style="text-decoration: none;" href="https://www.facebook.com/SAE.IITK" target="_blank"><i style="width: 16px;" data-feather="facebook"></i> <span class="links">
+                                        SAE.IITK</span></a>
+                                    <a class="pl-5" style="text-decoration: none;" href="https://www.instagram.com/iitkms/" target="_blank"><i style="width: 16px;" data-feather="instagram"></i> <span class="links">
+                                        iitkms</span></a>
+                                </div>
+                                <p>
+                                    <img style="margin: 5% auto" src="assets/img/iitkms.jpg">
+                                    <div>
+                                        <p style="font-weight: bold;">Achievements</p>
+                                        <ol style="text-align: left;">
+                                            <li>Secured 1st position in Formula Bharat 2023 (FB2023) competing against National and International teams</li>
+                                            <li>Secured 18th position in Formula Bharat 2021 (FB2021) competing against National and International teams</li>
+                                        </ol>
+                                    </div>
+                                    <div class="mt-4">
+                                        <p><span style="font-weight: bold;">Position of Responsibility</span> <br> Senior Team Member and Vehicle Dynamics Lead - IITK Motorsports (April’21 - April’22 )</p>
+                                        <ol style="text-align: left;">
+                                            <li>Designed and developed tools and solutions used across subsystems using MATLAB, Simulink, Python and MS Excel. </li>
+                                            <li>Mentored junior team members in vehicle dynamics, mainly wheel assembly, suspension system, steering system and brakes.</li>
+                                            <li>Prepared the team for Formula Bharat 2021, 2022 and coordinated with team leads to improve the overall performance.</li>
+                                        </ol>
+                                    </div>
+                                    <div class="mt-4">
+                                        <p><span style="font-weight: bold;">Project Details</span> <br> Formula Student Electric | IITK Motorsports (Sept’19 - April’22) <br> Faculty Advisors: Dr. Santanu De, Dept of Mechanical Engg. and Prof. Ramprasad Potluri, Dept of Electrical Engg.</p>
+                                        <ol style="text-align: left;">
+                                            <li>Assisted in the overall designing of an FS Electric Vehicle with a team of 30+ students and participated in FB2021.</li>
+                                            <li>Calculated forces at suspension points in MATLAB using Wheel Loads that are calculated based on load transfers.</li>
+                                            <li>Designed and analyzed wheel assembly in Solidworks, Ansys respectively, with design targets and under extreme conditions.</li>
+                                        </ol>
+                                    </div>
+                                </p>
                             </div>
-                            <div>
-                                <p class="font-weight-bold mt-4">PAT Implementation in Nanoemulsions | Process Engineering</p>
+                        </div>
+                        <!--------------------------------------------------------------------------------------------------->
+                        <a href="javascript: void(0)" id="myBtn4" class="work__img">
+                            <img src="assets/img/blockchain.gif" class="work__imgg" alt="">
+                            <div class="overlay">Game of Blocks</div>
+                        </a>
+                        <!-- The Modal -->
+                        <div id="myModal4" class="modal">
+                            <!-- Modal content -->
+                            <div class="modal-content">
+                                <span class="close" id="close4">&times;</span>
+                                <h2>Game of Blocks</h2>
+                                <div class="m-3">
+                                    <a style="text-decoration: none;" href="https://github.com/nikheshd/GameOfBlocks_PClub" target="_blank"><i style="width: 16px;" data-feather="github"></i>1 <span class="links">
+                                        GameOfBlocks_PClub</span></a>
+                                    <a class="pl-5" style="text-decoration: none;" href="https://github.com/nikheshd/smart-contract-hub/tree/main" target="_blank"><i style="width: 16px;" data-feather="github"></i>2 <span class="links">
+                                        smart-contract-hub</span></a>
+                                </div>
+                                <p>Programming Club, Science and Technology Council, Indian Institute of Technology Kanpur (May’21 - July’21 ) </p>
+                                <div>
+                                    <p class="mt-4" style="font-weight: bold;">Overview</p>
+                                    <p>This project aims to introduce the concept of blockchains and smart contract development,
+                                        which have recently become quite prevelant and relevant, with a flavor of Game Theory.</p>
+                                </div>
+                                <div>
+                                    <p class="mt-4" style="font-weight: bold;">Skills</p>
+                                    <p>BlockChain, Game Theory, Solidity</p>
+                                </div>
+                                <div>
+                                    <p class="mt-4" style="font-weight: bold;">Goals Achieved</p>
+                                    <ol style="text-align: left;">
+                                        <li>Understanding basic mechanism of Blockchains and cryptocurrencies.</li>
+                                        <li>Implementing a simple mining algorithm, in the form of an Assignment.</li>
+                                        <li>Learning about various consensus mechanisms prevalent in Blockchain systems.</li>
+                                        <li>Understanding Ethereum Smart Contracts and their usage.</li>
+                                        <li>Learning the programming language Solidity.</li>
+                                        <li>Implementing a Smart contract for transfer of a self created token called MetaCoin to
+                                            settle loans, in the form of an Assignment.</li>
+                                        <li>Learning the basics of Game Theory and Mechanism Design, and the different types of
+                                            mechanisms for various tasks.</li>
+                                        <li>Understanding the importance of designing fool proof mechanisms for day-to-day games.</li>
+                                        <li>Realizing the need for decentralization in everyday games (tasks) such as auctions,
+                                            voting and asset transfer.</li>
+                                        <li>Implementing several different methods to perform these tasks in a decentralized fashion, using Smart Contracts on the Ethereum Blockchain.</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!--------------------------------------------------------------------------------------------------->
+                        <a href="javascript: void(0)" id="myBtn5" class="work__img">
+                            <img src="assets/img/DrReddys.jpg" class="work__imgg" alt="">
+                            <div class="overlay">PAT Implementation in Nanoemulsions</div>
+                        </a>
+                        <!-- The Modal -->
+                        <div id="myModal5" class="modal">
+                            <!-- Modal content -->
+                            <div class="modal-content">
+                                <span class="close" id="close5">&times;</span>
+                                <h2>Summer Internship, Dr.Reddy's Laboratories</h2>
+                                <p>Hyderabad (May’22 - July’22 )</p>
+                                <div class="m-3">
+                                    <a style="text-decoration: none;" href="https://drive.google.com/drive/folders/1FpflA_mZNWKgvC1bTSD0p8DSWB7sfEXb" target="_blank"><span style="size: 16px;" class="material-icons-outlined">folder_open</span><span class="links">
+                                        Drive</span></a>
+                                    <a class="pl-5" style="text-decoration: none;" href="https://docs.google.com/presentation/d/e/2PACX-1vQiLVBSQrQ2DoCL7xrFmUvTqMYV6_c-w-dmI8bHz5NAKJwO_5LyHsPa-9oAnqWumg/pub?start=false&loop=false&delayms=3000" target="_blank"><span style="size: 16px;" class="material-icons-outlined">slideshow</span><span class="links">
+                                        PPT</span></a>
+                                </div>
+                                <div style="text-align: center;">
+                                    <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQiLVBSQrQ2DoCL7xrFmUvTqMYV6_c-w-dmI8bHz5NAKJwO_5LyHsPa-9oAnqWumg/embed?start=false&loop=true&delayms=3000" frameborder="0" width="70%" height="500"></iframe>
+                                </div>
+                                <div>
+                                    <p class="font-weight-bold mt-4">PAT Implementation in Nanoemulsions | Process Engineering</p>
+                                    <ol>
+                                        <li>Researched Process Analytical Technology (PAT) to build a science knowledge base about PAT in the company.</li>
+                                        <li>Learned from the developers of PAT tools like NanoFlowSizer,in-line viscometer and in-line refractometer.</li>
+                                        <li>Worked on understanding the Spatially-Resolved DLS, Low-Coherence Interferometry and flow correction algorithms.</li>
+                                    </ol>
+                                </div>
+                                <div>
+                                    <p class="font-weight-bold mt-4">Working of Inline-viscometers | Modeling and Simulation</p>
+                                    <ol>
+                                        <li>Understood the mechanism of an in-line viscometer to find critical attributes and parameters.</li>
+                                        <li>Made a mathematical model in MATLAB which gives plots for the selection of the specs of the in-line viscometer</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                        <!--------------------------------------------------------------------------------------------------->
+                        <a href="javascript: void(0)" id="myBtn6" class="work__img">
+                            <img src="assets/img/Demo.gif" class="work__imgg" alt="">
+                            <div class="overlay">Dragons-vs-Terminators game</div>
+                        </a>
+                        <!-- The Modal -->
+                        <div id="myModal6" class="modal">
+                            <!-- Modal content -->
+                            <div class="modal-content">
+                                <span class="close" id="close6">&times;</span>
+                                <h2>Dragons-vs-Terminators game</h2>
+                                <div class="m-3">
+                                    <a style="text-decoration: none;" href="https://github.com/nikheshd/GameOfBlocks_PClub/tree/main/Tower_defense_game" target="_blank"><i style="width: 16px;" data-feather="github"></i><span class="links">
+                                        Tower_defense_game</span></a>
+                                </div>
+                                <p>Dragons vs Terminators is a tower defense game where the goal is to defend the Dragon's territory by obstructing the Terminators.</p>
+                                <p class="mt-4"><span class="font-weight-bold">Skills:</span> Python  and Object Oriented Programming</p>
+                                <p class="font-weight-bold mt-4">Storyline of the game</p>
                                 <ol>
-                                    <li>Researched Process Analytical Technology (PAT) to build a science knowledge base about PAT in the company.</li>
-                                    <li>Learned from the developers of PAT tools like NanoFlowSizer,in-line viscometer and in-line refractometer.</li>
-                                    <li>Worked on understanding the Spatially-Resolved DLS, Low-Coherence Interferometry and flow correction algorithms.</li>
+                                    <li>The Terminator Robots are trying to steal the Dragon Eggs and the heart of the Dragon King</li>
+                                    <li>Dragons win if all the Terminators are destroyed</li>
+                                    <li>Terminators win if they reach the end of the tunnel or kill the Dragon King</li>
+                                    <li>You are expected to place different types of Dragons in the path to protect the Dragon Colony and destroy the Terminators!</li>
                                 </ol>
-                            </div>
-                            <div>
-                                <p class="font-weight-bold mt-4">Working of Inline-viscometers | Modeling and Simulation</p>
-                                <ol>
-                                    <li>Understood the mechanism of an in-line viscometer to find critical attributes and parameters.</li>
-                                    <li>Made a mathematical model in MATLAB which gives plots for the selection of the specs of the in-line viscometer</li>
-                                </ol>
+                                <img style="margin: 5% auto" src="assets/img/Demo.gif" class="work__imgg" alt="">
                             </div>
                         </div>
+                        <!--------------------------------------------------------------------------------------------------->
                     </div>
-<!--------------------------------------------------------------------------------------------------->
-                    <a href="javascript: void(0)" id="myBtn6" class="work__img">
-                        <img src="assets/img/Demo.gif" class="work__imgg" alt="">
-                        <div class="overlay">Dragons-vs-Terminators game</div>
-                    </a>
-                    <!-- The Modal -->
-                    <div id="myModal6" class="modal">
-                        <!-- Modal content -->
-                        <div class="modal-content">
-                            <span class="close" id="close6">&times;</span>
-                            <h2>Dragons-vs-Terminators game</h2>
-                            <div class="m-3">
-                                <a style="text-decoration: none;" href="https://github.com/nikheshd/GameOfBlocks_PClub/tree/main/Tower_defense_game" target="_blank"><i style="width: 16px;" data-feather="github"></i><span class="links">
-                                    Tower_defense_game</span></a>
-                            </div>
-                            <p>Dragons vs Terminators is a tower defense game where the goal is to defend the Dragon's territory by obstructing the Terminators.</p>
-                            <p class="mt-4"><span class="font-weight-bold">Skills:</span> Python  and Object Oriented Programming</p>
-                            <p class="font-weight-bold mt-4">Storyline of the game</p>
-                            <ol>
-                                <li>The Terminator Robots are trying to steal the Dragon Eggs and the heart of the Dragon King</li>
-                                <li>Dragons win if all the Terminators are destroyed</li>
-                                <li>Terminators win if they reach the end of the tunnel or kill the Dragon King</li>
-                                <li>You are expected to place different types of Dragons in the path to protect the Dragon Colony and destroy the Terminators!</li>
-                            </ol>
-                            <img style="margin: 5% auto" src="assets/img/Demo.gif" class="work__imgg" alt="">
-                        </div>
+                </section>
+                <!-- =====COURSES===== -->
+                <section class="coursework section" id="coursework">
+                    <h2 class="section-title">Coursework</h2>
+                    <div class="skills__container bd-grid">
+                        <a style="text-decoration: none;" href="https://www.coursera.org/account/accomplishments/specialization/certificate/7VABWQ6PBH86" target="_blank"><div class="skills__subtitle">Python for Everybody Specialization <p style="font-size: 15px;">Coursera</p></div></a>
+                        <ol class="skills__text hide_mobile">
+                            <a style="text-decoration: none;" href="https://www.coursera.org/account/accomplishments/certificate/P5VHTA9YKGXB" target="_blank"><li>Programming for Everybody (Getting Started with Python)</li></a>
+                            <a style="text-decoration: none;" href="https://www.coursera.org/account/accomplishments/certificate/HXD64WPPSM2W" target="_blank"><li>Python Data Structures</li></a>
+                            <a style="text-decoration: none;" href="https://www.coursera.org/account/accomplishments/certificate/8XH988HUMWUS" target="_blank"><li>Using Python to Access Web Data</li></a>
+                            <a style="text-decoration: none;" href="https://www.coursera.org/account/accomplishments/certificate/9Y86SDJDV85L" target="_blank"><li>Using Databases with Python</li></a>
+                            <a style="text-decoration: none;" href="https://www.coursera.org/account/accomplishments/certificate/AAFEE8MX5W72" target="_blank"><li>Capstone: Retrieving, Processing, and Visualizing Data with Python</li></a>
+                            <a style="text-decoration: none;" href="https://10xiitian.ibhubs.co/certificate/SIVCSBFTJU" target="_blank"><li>Python & OOP Concepts, iB Hubs</li></a>
+                        </ol>
+                        <div class="skills__subtitle">Competitive Programming <p style="font-size: 15px;">NxtWave/iB Hubs</p></div>
+                        <ol class="skills__text hide_mobile">
+                            <a style="text-decoration: none;" href="https://10xiitian.ccbp.in/certificate/QXCWULKHXD" target="_blank"><li>Tech Foundations</li></a>
+                            <a style="text-decoration: none;" href="https://10xiitian.ccbp.in/certificate/UAESLOSKYH" target="_blank"><li>C Programming Language</li></a>
+                            <a style="text-decoration: none;" href="https://10xiitian.ccbp.in/certificate/CWKGKURHRI" target="_blank"><li>C++ and Foundations of STL</li></a>
+                            <a style="text-decoration: none;" href="https://10xiitian.ccbp.in/certificate/FHCRFGOCSB" target="_blank"><li>Elementary Data Structures and Algorithms</li></a>
+                            <a style="text-decoration: none;" href="https://10xiitian.ccbp.in/certificate/YKLGFXWBRJ" target="_blank"><li>Data Structures</li></a>
+                        </ol>
+                        <div class="skills__subtitle">Full Stack Development - MERN <p style="font-size: 15px;">NxtWave</p></div>
+                        <ol class="skills__text hide_mobile">
+                            <a style="text-decoration: none;" href="https://10xiitian.ccbp.in/certificate/SWBAKBMYWE" target="_blank"><li>Build Your Own Static Website</li></a>
+                            <a style="text-decoration: none;" href="https://10xiitian.ccbp.in/certificate/MJMMCZFUBT" target="_blank"><li>Build Your Own Responsive Website</li></a>
+                            <a style="text-decoration: none;" href="https://10xiitian.ccbp.in/certificate/LAGHGDXYKZ" target="_blank"><li>Build Your Own Dynamic Web Application</li></a>
+                            <a style="text-decoration: none;" href="https://10xiitian.ccbp.in/certificate/BYEAAZIOLJ" target="_blank"><li>JavaScript Essentials</li></a>
+                            <a style="text-decoration: none;" href="https://10xiitian.ccbp.in/certificate/COVQVYMEPT" target="_blank"><li>Introduction to Databases</li></a>
+                            <a style="text-decoration: none;" href="https://10xiitian.ccbp.in/certificate/VLCOOGJVQL" target="_blank"><li>Node JS</li></a>
+                            <a style="text-decoration: none;" href="https://10xiitian.ccbp.in/certificate/VLCOOGJVQL" target="_blank"><li>React JS - Getting started</li></a>
+                        </ol>
+                        <div class="skills__subtitle">Other courses</div>
+                        <ol class="skills__text hide_mobile">
+                            <a style="text-decoration: none;" href="https://www.coursera.org/account/accomplishments/certificate/92ZEFT5A3N6L" target="_blank"><li>Machine Learning in Coursera, Professor Andrew Ng, Stanford University</li></a>
+                            <li>Fundamentals of Computing, IIT Kanpur</li>
+                            <li>Analytics in Transport and Telecom, IIT Kanpur</li>
+                            <li>Project Management, IIT Kanpur</li>
+                            <li>Real Analysis and Multivariable Calculus, IIT Kanpur</li>
+                            <li>Linear Algebra and ODEs, IIT Kanpur</li>
+                        </ol>
                     </div>
-<!--------------------------------------------------------------------------------------------------->
-                </div>
-            </section>
-            <!-- =====COURSES===== -->
-            <section class="coursework section" id="coursework">
-                <h2 class="section-title">Coursework</h2>
-                <div class="skills__container bd-grid">
-                    <a style="text-decoration: none;" href="https://www.coursera.org/account/accomplishments/specialization/certificate/7VABWQ6PBH86" target="_blank"><div class="skills__subtitle">Python for Everybody Specialization <p style="font-size: 15px;">Coursera</p></div></a>
-                    <ol class="skills__text hide_mobile">
-                        <a style="text-decoration: none;" href="https://www.coursera.org/account/accomplishments/certificate/P5VHTA9YKGXB" target="_blank"><li>Programming for Everybody (Getting Started with Python)</li></a>
-                        <a style="text-decoration: none;" href="https://www.coursera.org/account/accomplishments/certificate/HXD64WPPSM2W" target="_blank"><li>Python Data Structures</li></a>
-                        <a style="text-decoration: none;" href="https://www.coursera.org/account/accomplishments/certificate/8XH988HUMWUS" target="_blank"><li>Using Python to Access Web Data</li></a>
-                        <a style="text-decoration: none;" href="https://www.coursera.org/account/accomplishments/certificate/9Y86SDJDV85L" target="_blank"><li>Using Databases with Python</li></a>
-                        <a style="text-decoration: none;" href="https://www.coursera.org/account/accomplishments/certificate/AAFEE8MX5W72" target="_blank"><li>Capstone: Retrieving, Processing, and Visualizing Data with Python</li></a>
-                        <a style="text-decoration: none;" href="https://10xiitian.ibhubs.co/certificate/SIVCSBFTJU" target="_blank"><li>Python & OOP Concepts, iB Hubs</li></a>
-                    </ol>
-                    <div class="skills__subtitle">Competitive Programming <p style="font-size: 15px;">NxtWave/iB Hubs</p></div>
-                    <ol class="skills__text hide_mobile">
-                        <a style="text-decoration: none;" href="https://10xiitian.ccbp.in/certificate/QXCWULKHXD" target="_blank"><li>Tech Foundations</li></a>
-                        <a style="text-decoration: none;" href="https://10xiitian.ccbp.in/certificate/UAESLOSKYH" target="_blank"><li>C Programming Language</li></a>
-                        <a style="text-decoration: none;" href="https://10xiitian.ccbp.in/certificate/CWKGKURHRI" target="_blank"><li>C++ and Foundations of STL</li></a>
-                        <a style="text-decoration: none;" href="https://10xiitian.ccbp.in/certificate/FHCRFGOCSB" target="_blank"><li>Elementary Data Structures and Algorithms</li></a>
-                        <a style="text-decoration: none;" href="https://10xiitian.ccbp.in/certificate/YKLGFXWBRJ" target="_blank"><li>Data Structures</li></a>
-                    </ol>
-                    <div class="skills__subtitle">Full Stack Development - MERN <p style="font-size: 15px;">NxtWave</p></div>
-                    <ol class="skills__text hide_mobile">
-                        <a style="text-decoration: none;" href="https://10xiitian.ccbp.in/certificate/SWBAKBMYWE" target="_blank"><li>Build Your Own Static Website</li></a>
-                        <a style="text-decoration: none;" href="https://10xiitian.ccbp.in/certificate/MJMMCZFUBT" target="_blank"><li>Build Your Own Responsive Website</li></a>
-                        <a style="text-decoration: none;" href="https://10xiitian.ccbp.in/certificate/LAGHGDXYKZ" target="_blank"><li>Build Your Own Dynamic Web Application</li></a>
-                        <a style="text-decoration: none;" href="https://10xiitian.ccbp.in/certificate/BYEAAZIOLJ" target="_blank"><li>JavaScript Essentials</li></a>
-                        <a style="text-decoration: none;" href="https://10xiitian.ccbp.in/certificate/COVQVYMEPT" target="_blank"><li>Introduction to Databases</li></a>
-                        <a style="text-decoration: none;" href="https://10xiitian.ccbp.in/certificate/VLCOOGJVQL" target="_blank"><li>Node JS</li></a>
-                        <a style="text-decoration: none;" href="https://10xiitian.ccbp.in/certificate/VLCOOGJVQL" target="_blank"><li>React JS - Getting started</li></a>
-                    </ol>
-                    <div class="skills__subtitle">Other courses</div>
-                    <ol class="skills__text hide_mobile">
-                        <a style="text-decoration: none;" href="https://www.coursera.org/account/accomplishments/certificate/92ZEFT5A3N6L" target="_blank"><li>Machine Learning in Coursera, Professor Andrew Ng, Stanford University</li></a>
-                        <li>Fundamentals of Computing, IIT Kanpur</li>
-                        <li>Analytics in Transport and Telecom, IIT Kanpur</li>
-                        <li>Project Management, IIT Kanpur</li>
-                        <li>Real Analysis and Multivariable Calculus, IIT Kanpur</li>
-                        <li>Linear Algebra and ODEs, IIT Kanpur</li>
-                    </ol>
-                </div>
-            </section>
+                </section>
 
-            <!--===== CONTACT =====-->
-            <!-- <section class="contact section" id="contact">
-                <h2 class="section-title">Contact</h2>
+                <!--===== CONTACT =====-->
+                <!-- <section class="contact section" id="contact">
+                    <h2 class="section-title">Contact</h2>
 
-                <div class="contact__container bd-grid">
-                    <form action="" class="contact__form">
-                        <input type="text" placeholder="Name" class="contact__input">
-                        <input type="mail" placeholder="Email" class="contact__input">
-                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-                        <input type="button" value="Enter" class="contact__button button">
-                    </form>
-                </div>
-            </section> -->
-
-        <!-- ==========SCOLL TO TOP========== -->
-        <button type="button" class="btn btn-floating btn-lg" id="btn-back-to-top" title="Scroll to top">
-            <i style="width: 16px;" class="fas fa-moon" data-feather="arrow-up"></i>
-        </button>
-
+                    <div class="contact__container bd-grid">
+                        <form action="" class="contact__form">
+                            <input type="text" placeholder="Name" class="contact__input">
+                            <input type="mail" placeholder="Email" class="contact__input">
+                            <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
+                            <input type="button" value="Enter" class="contact__button button">
+                        </form>
+                    </div>
+                </section> -->
+            </main>
+            <!-- ==========SCOLL TO TOP========== -->
+            <button type="button" class="btn btn-floating btn-lg" id="btn-back-to-top" title="Scroll to top">
+                <i style="width: 16px;" class="fas fa-moon" data-feather="arrow-up"></i>
+            </button>
+        </div>
         <!--===== FOOTER =====-->
         <footer class="footer">
             <p class="footer__title">Dwara Nikhesh Babu</p>
