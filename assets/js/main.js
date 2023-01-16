@@ -315,8 +315,6 @@ function backToTop() {
   document.documentElement.scrollTop = 0;
 }
 
-mybutton.click();
-
 
 
 

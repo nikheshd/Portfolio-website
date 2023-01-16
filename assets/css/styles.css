@@ -1246,24 +1246,32 @@ a {
   color: var(--txtcolor);
 }
 
-#preloader{
-  justify-content: center;
-  max-height: 78vh;
+.preloader{
+  display: flex; 
+  flex-direction: column;
+  justify-content: end;
   background-color: var(--home_bg);
+  max-height: 100%;
+}
+
+#pre-footer{
+  clear: both;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+#pre-text{
+  margin: auto;
+  padding-top: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
 }
 
 #preloaderimg{
-  margin: auto;
-  padding: 10%; 
-  width: 50%;
-}
-
-@media screen and (max-width: 760px){
-  #preloaderimg{
-    width: 100%;
-    padding-top: 35%;
-    padding-bottom: 45%;
-  }
+  width: 10vh;
 }
 
 #main_page{
