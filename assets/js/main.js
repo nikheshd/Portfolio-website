@@ -1,4 +1,4 @@
-
+console.clear();
 // var preloader = document.getElementById("preloader");
 // var main_page = document.getElementById("main_page");
 // preloader.classList.add("d-none");
