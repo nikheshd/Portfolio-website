@@ -79,10 +79,10 @@ const sr = ScrollReveal({
 //     reset: true
 }); 
 
-sr.reveal('.about__img, .skills__subtitle, .skills__text, .education__container, .section-title,',{delay: 50}); 
+sr.reveal('.about__img, .skills__subtitle, .skills__text, .section-title',{delay: 50}); 
 sr.reveal('.about__subtitle, .about__text, .skills__img',{delay: 100}); 
 sr.reveal('.home__social-icon',{ interval: 100}); 
-sr.reveal('.skills__data, .work__img, .contact__input',{interval: 100}); 
+sr.reveal('.skills__data, .work__img, .education__container, .contact__input',{interval: 100}); 
 
 
 
