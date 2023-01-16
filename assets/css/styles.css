@@ -1249,6 +1249,7 @@ a {
 #preloader{
   justify-content: center;
   max-height: 78vh;
+  background-color: var(--home_bg);
 }
 
 #preloaderimg{
@@ -1260,7 +1261,11 @@ a {
 @media screen and (max-width: 760px){
   #preloaderimg{
     width: 100%;
-    padding-top: 25%;
-    padding-bottom: 35%;
+    padding-top: 35%;
+    padding-bottom: 45%;
   }
+}
+
+#main_page{
+  display: none;
 }
